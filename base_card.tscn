@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://v76y8bjfgvfo"]
+
+[ext_resource type="Script" path="res://BaseCard.gd" id="1_30ik7"]
+[ext_resource type="Texture2D" uid="uid://dnvaxfrjh2o7j" path="res://Cards/AC1-01Ladogon.png" id="1_50ah7"]
+
+[node name="BaseCard" type="Sprite2D"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_50ah7")
+centered = false
+script = ExtResource("1_30ik7")

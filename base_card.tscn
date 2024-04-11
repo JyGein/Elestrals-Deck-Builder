@@ -8,3 +8,11 @@ scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_50ah7")
 centered = false
 script = ExtResource("1_30ik7")
+
+[node name="Interaction" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 825.0
+offset_bottom = 1125.0
+
+[connection signal="gui_input" from="Interaction" to="." method="_on_interaction_gui_input"]

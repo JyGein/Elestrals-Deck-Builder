@@ -1,6 +1,6 @@
-extends Sprite2D
+extends Node2D
 
-signal card_inspected(image)
+signal catalog_cards_updated(cards)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -11,7 +11,5 @@ func _process(delta):
 	pass
 
 
-func _on_interaction_gui_input(event):
-	if event is InputEventMouseButton:
-		if event.button_index == 2 && event.pressed:
-			emit_signal("card_inspected", texture)
+func _on_cards_parent_spawned_cards(cards):
+	emit_signal("catalog_cards_updated", cards)

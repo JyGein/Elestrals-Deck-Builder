@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://w2nd7q4uuxd0"]
+[gd_scene load_steps=8 format=3 uid="uid://w2nd7q4uuxd0"]
 
+[ext_resource type="Script" path="res://catalog assets/catalog.gd" id="1_i0hbv"]
 [ext_resource type="Texture2D" uid="uid://w0ntkmmtnoyy" path="res://catalog assets/border.svg" id="1_vbtrv"]
 [ext_resource type="Script" path="res://catalog assets/CardsParent.gd" id="2_snf07"]
 [ext_resource type="Texture2D" uid="uid://bul25lcbgqq71" path="res://catalog assets/bg.svg" id="3_yr5qc"]
@@ -8,6 +9,7 @@
 [ext_resource type="Script" path="res://catalog assets/Slider.gd" id="5_80qlr"]
 
 [node name="Catalog" type="Node2D"]
+script = ExtResource("1_i0hbv")
 
 [node name="Border" type="Sprite2D" parent="."]
 z_index = 5
@@ -15,6 +17,7 @@ texture = ExtResource("1_vbtrv")
 centered = false
 
 [node name="Cards Parent" type="Node2D" parent="."]
+z_index = 1
 script = ExtResource("2_snf07")
 
 [node name="Bg" type="Sprite2D" parent="."]
@@ -22,11 +25,14 @@ z_index = -1
 texture = ExtResource("3_yr5qc")
 centered = false
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="Manual Drag Button" type="TextureButton" parent="."]
+visible = false
 offset_left = 49.0
 offset_top = 22.0
 offset_right = 411.0
 offset_bottom = 627.0
+mouse_filter = 1
+disabled = true
 
 [node name="Slider" type="Sprite2D" parent="."]
 texture = ExtResource("4_wu5sw")
@@ -37,4 +43,13 @@ script = ExtResource("5_80qlr")
 texture = ExtResource("5_5c6jv")
 centered = false
 
-[connection signal="gui_input" from="TextureButton" to="Cards Parent" method="_on_texture_button_gui_input"]
+[node name="Slider Button Control" type="TextureButton" parent="Slider/Slider Button"]
+offset_left = 419.0
+offset_top = 33.0
+offset_right = 428.0
+offset_bottom = 72.0
+
+[connection signal="spawned_cards" from="Cards Parent" to="." method="_on_cards_parent_spawned_cards"]
+[connection signal="gui_input" from="Manual Drag Button" to="Cards Parent" method="_on_manual_drag_button_gui_input"]
+[connection signal="slider_sliding" from="Slider" to="Cards Parent" method="_on_slider_slider_sliding"]
+[connection signal="gui_input" from="Slider/Slider Button/Slider Button Control" to="Slider" method="_on_slider_button_control_gui_input"]

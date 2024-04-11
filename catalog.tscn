@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://w2nd7q4uuxd0"]
+
+[ext_resource type="Texture2D" uid="uid://w0ntkmmtnoyy" path="res://catalog assets/border.svg" id="1_vbtrv"]
+[ext_resource type="Script" path="res://catalog assets/CardsParent.gd" id="2_snf07"]
+[ext_resource type="Texture2D" uid="uid://bul25lcbgqq71" path="res://catalog assets/bg.svg" id="3_yr5qc"]
+
+[node name="Catalog" type="Node2D"]
+
+[node name="Border" type="Sprite2D" parent="."]
+z_index = 5
+texture = ExtResource("1_vbtrv")
+centered = false
+
+[node name="Cards Parent" type="Node2D" parent="."]
+script = ExtResource("2_snf07")
+
+[node name="Bg" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("3_yr5qc")
+centered = false
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 49.0
+offset_top = 22.0
+offset_right = 404.0
+offset_bottom = 627.0
+
+[connection signal="gui_input" from="TextureButton" to="Cards Parent" method="_on_texture_button_gui_input"]

@@ -12,18 +12,22 @@ func _ready():
 		DirAccess.open("user://").make_dir("Cards")
 		dir = DirAccess.open("user://Cards")
 	var cards = JSON.parse_string(FileAccess.get_file_as_string("res://card_information.json"))
+	var regex = RegEx.new()
+	regex.compile(r".+\.([A-z]{3,4})")
 	for card_name in cards:
 		var card_data = cards[card_name]
 		if card_data["Type"] == "Template":
 			continue
 		for Art in card_data["Arts"]:
-			if "{0} {1} {2}.webp".format([Art[2], card_name, Art[0]]) not in dir.get_files():
-				card_file = FileAccess.open("user://Cards/{0} {1} {2}.webp".format([Art[2], card_name, Art[0]]), FileAccess.WRITE)
+			var image_type = regex.search(Art[1]).get_string(1)
+			if "{0} {1} {2}.{3}".format([Art[2], card_name, Art[0], image_type]) not in dir.get_files():
+				card_file = FileAccess.open("user://Cards/{0} {1} {2}.{3}".format([Art[2], card_name, Art[0], image_type]), FileAccess.WRITE)
 				var error = http_request.request(Art[1])
 				if error != OK:
 					push_error("An error occurred in the HTTP request.")
 				await image_installed
 	$Catalog.visible = true
+	$Catalog.load_cards(cards)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -53,7 +57,9 @@ func _on_base_card_card_inspected(image):
 func _http_request_completed(result, response_code, headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS:
 		push_error("Image couldn't be downloaded. Try a different image. Response Code: {0}".format([response_code]))
-	var card_image = Image.new()
+	#var card_image = Image.new()
+	#var error = card_image.load_webp_from_buffer(body)
+	#print(error_string(error))
 	card_file.store_buffer(body)
 	card_file = null
 	emit_signal("image_installed")

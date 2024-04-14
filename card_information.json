@@ -20,10 +20,10 @@
 		"Spirit_Type": null,
 		"App_Code": "sd05-003",
 		"Arts": [
-			["Full Art", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Ffe28e581-8b4d-4afa-8a2f-d80c0481071e%2Fupload-1682804184089.webp&w=1920&q=75", "BS1"],
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fd449a3d5-cb98-4732-adde-d340c53810e6%2Fupload-1682806159784.webp&w=1920&q=75", "SD05"],
-			["Stained Glass", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F5e3c9571-9f8d-45d9-bf21-ea9efd7a93f4%2Fupload-1710357718072.png&w=1920&q=75", "SS1"],
-			["Stellar Full Art", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fd6f60aa9-4747-45fe-b0b5-fc9a7be16354%2Fupload-1682806414982.webp&w=1920&q=75", "BS1"]
+			["Full Art", "https://cdn.cerealapis.com/post/fe28e581-8b4d-4afa-8a2f-d80c0481071e/upload-1682804184089.webp", "BS1"],
+			["Base", "https://cdn.cerealapis.com/post/d449a3d5-cb98-4732-adde-d340c53810e6/upload-1682806159784.webp", "SD05"],
+			["Stained Glass", "https://cdn.cerealapis.com/post/5e3c9571-9f8d-45d9-bf21-ea9efd7a93f4/upload-1710357718072.png", "SS1"],
+			["Stellar Full Art", "https://cdn.cerealapis.com/post/d6f60aa9-4747-45fe-b0b5-fc9a7be16354/upload-1682806414982.webp", "BS1"]
 		]
 	},
 	"Teratlas": {
@@ -35,9 +35,9 @@
 		"Spirit_Type": "E",
 		"App_Code": "zy4pml9c",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F18941787-e3d0-47b3-a24d-1a083470bd32%2Fupload-1671726241069.webp&w=1920&q=75", "BS1"],
-			["Alt", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F69ae2a4d-f5fd-4602-87d1-0fd15ca4325e%2Fupload-1682805947161.webp&w=1920&q=75", "BS1"],
-			["Stellar", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F91c2e04a-6657-4b05-b835-825ffd9e6e7d%2Fupload-1682806503603.webp&w=1920&q=75", "PR1"]
+			["Base", "https://cdn.cerealapis.com/post/18941787-e3d0-47b3-a24d-1a083470bd32/upload-1671726241069.webp", "BS1"],
+			["Alt", "https://cdn.cerealapis.com/post/69ae2a4d-f5fd-4602-87d1-0fd15ca4325e/upload-1682805947161.webp", "BS1"],
+			["Stellar", "https://cdn.cerealapis.com/post/91c2e04a-6657-4b05-b835-825ffd9e6e7d/upload-1682806503603.webp", "PR1"]
 		]
 	},
 	"Vipyro": {
@@ -49,10 +49,10 @@
 		"Spirit_Type": "F",
 		"App_Code": "285245d8",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F29a88095-2d75-49be-868f-af31890141d9%2Fupload-1671726265142.webp&w=1920&q=75", "BS1"],
-			["Alt", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F467e51db-fc70-43a4-9bf6-b36cf4a59b27%2Fupload-1682805973821.webp&w=1920&q=75", "BS1"],
-			["Artist's", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F3e12d327-ffd6-44dd-8c18-ee112abcd650%2Fupload-1682804654560.webp&w=1920&q=75", "AC1"],
-			["Stellar", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F3e8df3b6-6293-4470-bc27-729c50cd7c4a%2Fupload-1682806516022.webp&w=1920&q=75", "PR1"]
+			["Base", "https://cdn.cerealapis.com/post/29a88095-2d75-49be-868f-af31890141d9/upload-1671726265142.webp", "BS1"],
+			["Alt", "https://cdn.cerealapis.com/post/467e51db-fc70-43a4-9bf6-b36cf4a59b27/upload-1682805973821.webp", "BS1"],
+			["Artist's", "https://cdn.cerealapis.com/post/3e12d327-ffd6-44dd-8c18-ee112abcd650/upload-1682804654560.webp", "AC1"],
+			["Stellar", "https://cdn.cerealapis.com/post/3e8df3b6-6293-4470-bc27-729c50cd7c4a/upload-1682806516022.webp", "PR1"]
 		]
 	},
 	"Leviaphin": {
@@ -64,9 +64,9 @@
 		"Spirit_Type": "W",
 		"App_Code": "07hm45mc",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F0446225b-6da2-4735-82cd-84910a26e1c9%2Fupload-1671726297539.webp&w=1920&q=75", "BS1"],
-			["Alt", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F3368f657-a137-4d6e-be3f-f6ba6d1d6ec0%2Fupload-1682805988243.webp&w=1920&q=75", "BS1"],
-			["Stellar", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F0430ea50-bb94-4b60-8e6c-520f9b5e81bb%2Fupload-1682806270189.webp&w=1920&q=75", "PR1"]
+			["Base", "https://cdn.cerealapis.com/post/0446225b-6da2-4735-82cd-84910a26e1c9/upload-1671726297539.webp", "BS1"],
+			["Alt", "https://cdn.cerealapis.com/post/3368f657-a137-4d6e-be3f-f6ba6d1d6ec0/upload-1682805988243.webp", "BS1"],
+			["Stellar", "https://cdn.cerealapis.com/post/0430ea50-bb94-4b60-8e6c-520f9b5e81bb/upload-1682806270189.webp", "PR1"]
 		]
 	},
 	"Zaptor": {
@@ -78,12 +78,12 @@
 		"Spirit_Type": "T",
 		"App_Code": "aly4rlvw",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F784adf9e-599b-442f-a2e3-c5a54ad695f8%2Fupload-1671726315017.webp&w=1920&q=75", "BS1"],
-			["Alt", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F8fb59399-e813-49ce-9289-d1ad05d213ae%2Fupload-1682806061535.webp&w=1920&q=75", "BS1"],
-			["Full Art", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fe4f9fea3-c8a6-4c3d-8fab-fb887fab6d65%2Fupload-1709917394934.png&w=1920&q=75", "SS1"],
-			["Full Art Holo", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F84f4829d-9f02-4b48-9cbe-c8529ec7d546%2Fupload-1709925276222.png&w=1920&q=75", "SS1"],
-			["Artist's", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F26476d7c-6315-4c51-8c49-30bcbb825baf%2Fupload-1682804460065.webp&w=1920&q=75", "AC1"],
-			["Stellar", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fb25359bf-d01c-4909-9ff6-0717feddae7f%2Fupload-1682806544299.webp&w=1920&q=75", "PR1"]
+			["Base", "https://cdn.cerealapis.com/post/784adf9e-599b-442f-a2e3-c5a54ad695f8/upload-1671726315017.webp", "BS1"],
+			["Alt", "https://cdn.cerealapis.com/post/8fb59399-e813-49ce-9289-d1ad05d213ae/upload-1682806061535.webp", "BS1"],
+			["Full Art", "https://cdn.cerealapis.com/post/e4f9fea3-c8a6-4c3d-8fab-fb887fab6d65/upload-1709917394934.png", "SS1"],
+			["Full Art Holo", "https://cdn.cerealapis.com/post/84f4829d-9f02-4b48-9cbe-c8529ec7d546/upload-1709925276222.png", "SS1"],
+			["Artist's", "https://cdn.cerealapis.com/post/26476d7c-6315-4c51-8c49-30bcbb825baf/upload-1682804460065.webp", "AC1"],
+			["Stellar", "https://cdn.cerealapis.com/post/b25359bf-d01c-4909-9ff6-0717feddae7f/upload-1682806544299.webp", "PR1"]
 		]
 	},
 	"Lycarus": {
@@ -95,12 +95,12 @@
 		"Spirit_Type": "A",
 		"App_Code": "rx7p3ip8",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Ff5e27d21-2612-4444-973e-b8b7c13b381c%2Fupload-1671726332007.webp&w=1920&q=75", "BS1"],
-			["Alt", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F3448f7a4-faef-49ec-b27b-c12c4cabf1c5%2Fupload-1682806093669.webp&w=1920&q=75", "BS1"],
-			["Full Art", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fc987f1b8-e37a-42cb-9d8c-78b05c7e35ae%2Fupload-1710355396706.png&w=1920&q=75", "SS1"],
-			["Full Art Holo", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F23709caf-3966-4b7c-94f8-6a27e115c287%2Fupload-1710357327376.png&w=1920&q=75", "SS1"],
-			["Artist's", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F54c8b972-7f59-45e4-8bc1-d8c7282a638a%2Fupload-1682804785450.webp&w=1920&q=75", "AC1"],
-			["Stellar", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F796e2056-5abe-4d58-a2fc-23e1aacc7e1a%2Fupload-1682806323005.webp&w=1920&q=75", "PR1"]
+			["Base", "https://cdn.cerealapis.com/post/f5e27d21-2612-4444-973e-b8b7c13b381c/upload-1671726332007.webp", "BS1"],
+			["Alt", "https://cdn.cerealapis.com/post/3448f7a4-faef-49ec-b27b-c12c4cabf1c5/upload-1682806093669.webp", "BS1"],
+			["Full Art", "https://cdn.cerealapis.com/post/c987f1b8-e37a-42cb-9d8c-78b05c7e35ae/upload-1710355396706.png", "SS1"],
+			["Full Art Holo", "https://cdn.cerealapis.com/post/23709caf-3966-4b7c-94f8-6a27e115c287/upload-1710357327376.png", "SS1"],
+			["Artist's", "https://cdn.cerealapis.com/post/54c8b972-7f59-45e4-8bc1-d8c7282a638a/upload-1682804785450.webp", "AC1"],
+			["Stellar", "https://cdn.cerealapis.com/post/796e2056-5abe-4d58-a2fc-23e1aacc7e1a/upload-1682806323005.webp", "PR1"]
 		]
 	},
 	"Necruff": {
@@ -112,9 +112,9 @@
 		"Spirit_Type": null,
 		"App_Code": "m13j9l20",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F55cc653d-86bb-4d6c-b4a3-f7e39decf672%2Fupload-1671726661936.webp&w=1920&q=75", "BS1"],
-			["Artist's", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Ff978efdb-0bca-48c4-8b4d-5c40962f55ab%2Fupload-1682804907766.webp&w=1920&q=75", "AC1"],
-			["Stellar", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F2b4cf37b-675a-4d6a-89ad-85eb28ccb05b%2Fupload-1682806380511.webp&w=1920&q=75", "SD02"]
+			["Base", "https://cdn.cerealapis.com/post/55cc653d-86bb-4d6c-b4a3-f7e39decf672/upload-1671726661936.webp", "BS1"],
+			["Artist's", "https://cdn.cerealapis.com/post/f978efdb-0bca-48c4-8b4d-5c40962f55ab/upload-1682804907766.webp", "AC1"],
+			["Stellar", "https://cdn.cerealapis.com/post/2b4cf37b-675a-4d6a-89ad-85eb28ccb05b/upload-1682806380511.webp", "SD02"]
 		]
 	},
 	"Blazerus": {
@@ -126,7 +126,7 @@
 		"Spirit_Type": null,
 		"App_Code": "1t29fwo5",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fd7d5a79d-96d7-4096-a909-57ea97159bd0%2Fupload-1671726680542.webp&w=1920&q=75", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/d7d5a79d-96d7-4096-a909-57ea97159bd0/upload-1671726680542.webp", "BS1"]
 		]
 	},
 	"Trifernal": {
@@ -138,9 +138,9 @@
 		"Spirit_Type": null,
 		"App_Code": "37kaz3ty",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Ff2604fb6-cc3c-41d6-9575-e412d04b9d1b%2Fupload-1671726699879.webp&w=1920&q=75", "BS1"],
-			["Holo", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fc9c3050b-dfa7-4625-8bcc-ac68f8975e19%2Fupload-1682806557373.webp&w=1920&q=75", "SD02"],
-			["Full Art", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F45310838-9a6d-4591-beda-57413147d30b%2Fupload-1682805826124.webp&w=1920&q=75", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/f2604fb6-cc3c-41d6-9575-e412d04b9d1b/upload-1671726699879.webp", "BS1"],
+			["Holo", "https://cdn.cerealapis.com/post/c9c3050b-dfa7-4625-8bcc-ac68f8975e19/upload-1682806557373.webp", "SD02"],
+			["Full Art", "https://cdn.cerealapis.com/post/45310838-9a6d-4591-beda-57413147d30b/upload-1682805826124.webp", "BS1"]
 		]
 	},
 	"Sluggle": {
@@ -152,9 +152,9 @@
 		"Spirit_Type": null,
 		"App_Code": "il184536",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fe4e6c2e4-1aec-4555-8945-1e7fead0dd91%2Fupload-1671727004657.webp&w=1920&q=75", "BS1"],
-			["Artist's", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F9236ca9a-43fe-4cc8-a1e3-00ee394e2997%2Fupload-1682804970333.webp&w=1920&q=75", "AC1"],
-			["Stellar", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F019ec81f-25cd-4f13-a3c3-7d7f7d4a02b1%2Fupload-1682806456860.webp&w=1920&q=75", "SD03"]
+			["Base", "https://cdn.cerealapis.com/post/e4e6c2e4-1aec-4555-8945-1e7fead0dd91/upload-1671727004657.webp", "BS1"],
+			["Artist's", "https://cdn.cerealapis.com/post/9236ca9a-43fe-4cc8-a1e3-00ee394e2997/upload-1682804970333.webp", "AC1"],
+			["Stellar", "https://cdn.cerealapis.com/post/019ec81f-25cd-4f13-a3c3-7d7f7d4a02b1/upload-1682806456860.webp", "SD03"]
 		]
 	},
 	"Glauby": {
@@ -166,7 +166,7 @@
 		"Spirit_Type": null,
 		"App_Code": "f4r15448",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F307cb039-8806-4a4e-9007-b15af583113b%2Fupload-1671727020681.webp&w=1920&q=75", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/307cb039-8806-4a4e-9007-b15af583113b/upload-1671727020681.webp", "BS1"]
 		]
 	},
 	"Majesea": {
@@ -178,9 +178,9 @@
 		"Spirit_Type": null,
 		"App_Code": "7k2ov9nl",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fd70b9bf4-dd55-444c-940f-2d7f77f9d1ee%2Fupload-1671727036134.webp&w=1920&q=75", "BS1"],
-			["Holo", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Ff76c4d6c-e1d4-45f7-ba4f-5209d9d7b480%2Fupload-1682806124469.webp&w=1920&q=75", "SD03"],
-			["Full Art", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F9d2c32ed-333a-4d3b-a329-0782ca688d29%2Fupload-1682805881848.webp&w=1920&q=75", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/d70b9bf4-dd55-444c-940f-2d7f77f9d1ee/upload-1671727036134.webp", "BS1"],
+			["Holo", "https://cdn.cerealapis.com/post/f76c4d6c-e1d4-45f7-ba4f-5209d9d7b480/upload-1682806124469.webp", "SD03"],
+			["Full Art", "https://cdn.cerealapis.com/post/9d2c32ed-333a-4d3b-a329-0782ca688d29/upload-1682805881848.webp", "BS1"]
 		]
 	},
 	"Quackle": {
@@ -192,11 +192,11 @@
 		"Spirit_Type": null,
 		"App_Code": "010ljlpy",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F042aac89-0ad6-4b9a-a1ea-ee038d3e2637%2Fupload-1671727460476.webp&w=1920&q=75", "BS1"],
-			["Alt", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F7c5715cf-c94c-4b87-af37-eaaf614be05e%2Fupload-1709923739136.png&w=1920&q=75", "SS1"],
-			["Artist's", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fbd77306e-51d2-4b9f-b1af-50fb18dfc7b7%2Fupload-1682805041535.webp&w=1920&q=75", "AC1"],
-			["Artist's", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F6c837542-59ae-4036-8137-f656d04511f3%2Fupload-1682804746079.webp&w=1920&q=75", "AC1"],
-			["Stellar", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fa2bd27ec-63ed-4777-a445-b0f01a46854f%2Fupload-1682806439371.webp&w=1920&q=75", "SD04"]
+			["Base", "https://cdn.cerealapis.com/post/042aac89-0ad6-4b9a-a1ea-ee038d3e2637/upload-1671727460476.webp", "BS1"],
+			["Alt", "https://cdn.cerealapis.com/post/7c5715cf-c94c-4b87-af37-eaaf614be05e/upload-1709923739136.png", "SS1"],
+			["Artist's", "https://cdn.cerealapis.com/post/bd77306e-51d2-4b9f-b1af-50fb18dfc7b7/upload-1682805041535.webp", "AC1"],
+			["Artist's", "https://cdn.cerealapis.com/post/6c837542-59ae-4036-8137-f656d04511f3/upload-1682804746079.webp", "AC1"],
+			["Stellar", "https://cdn.cerealapis.com/post/a2bd27ec-63ed-4777-a445-b0f01a46854f/upload-1682806439371.webp", "SD04"]
 		]
 	},
 	"Cygnetrik": {
@@ -208,7 +208,7 @@
 		"Spirit_Type": null,
 		"App_Code": "d991623a",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F041a7c45-ca35-4fb8-b651-c26ed0cd9929%2Fupload-1671727475433.webp&w=1920&q=75", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/041a7c45-ca35-4fb8-b651-c26ed0cd9929/upload-1671727475433.webp", "BS1"]
 		]
 	},
 	"Ohmperial": {
@@ -220,9 +220,9 @@
 		"Spirit_Type": null,
 		"App_Code": "3u1nmgdc",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F62a503f6-51c9-416b-9bcb-5d30da18f2a7%2Fupload-1671727490904.webp&w=1920&q=75", "BS1"],
-			["Holo", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F46e3f865-495c-45cd-bb8b-6744076df9cb%2Fupload-1682806144524.webp&w=1920&q=75", "SD04"],
-			["Full Art", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F0e3ed8ff-0ad7-4cc8-9f23-a618afaa1b59%2Fupload-1682805898293.webp&w=1920&q=75", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/62a503f6-51c9-416b-9bcb-5d30da18f2a7/upload-1671727490904.webp", "BS1"],
+			["Holo", "https://cdn.cerealapis.com/post/46e3f865-495c-45cd-bb8b-6744076df9cb/upload-1682806144524.webp", "SD04"],
+			["Full Art", "https://cdn.cerealapis.com/post/0e3ed8ff-0ad7-4cc8-9f23-a618afaa1b59/upload-1682805898293.webp", "BS1"]
 		]
 	},
 	"Hydrake": {
@@ -234,11 +234,11 @@
 		"Spirit_Type": null,
 		"App_Code": "sd05-001",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fd4913858-b793-4518-9a55-58ff210c5643%2Fupload-1671754357410.webp&w=1920&q=75", "SD05"],
-			["Alt", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F4f4a2046-2b0c-4c9f-a98f-b4ff7a042f47%2Fupload-1710355648648.png&w=1920&q=75", "SS1"],
-			["Artist's", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F0727d78f-2f6e-4456-a80b-05a28a75f67c%2Fupload-1682805055947.webp&w=1920&q=75", "AC1"],
-			["Celebration", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F68c13b44-0b96-41c8-bd04-b35c0457309a%2Fupload-1682805373721.webp&w=1920&q=75", "PR1"],
-			["Stellar", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F7eca2d91-7668-40e0-a3d5-6d402f93fd9b%2Fupload-1682806251582.webp&w=1920&q=75", "SD05"]
+			["Base", "https://cdn.cerealapis.com/post/d4913858-b793-4518-9a55-58ff210c5643/upload-1671754357410.webp", "SD05"],
+			["Alt", "https://cdn.cerealapis.com/post/4f4a2046-2b0c-4c9f-a98f-b4ff7a042f47/upload-1710355648648.png", "SS1"],
+			["Artist's", "https://cdn.cerealapis.com/post/0727d78f-2f6e-4456-a80b-05a28a75f67c/upload-1682805055947.webp", "AC1"],
+			["Celebration", "https://cdn.cerealapis.com/post/68c13b44-0b96-41c8-bd04-b35c0457309a/upload-1682805373721.webp", "PR1"],
+			["Stellar", "https://cdn.cerealapis.com/post/7eca2d91-7668-40e0-a3d5-6d402f93fd9b/upload-1682806251582.webp", "SD05"]
 		]
 	},
 	"Twindra": {
@@ -250,7 +250,7 @@
 		"Spirit_Type": null,
 		"App_Code": "sd05-002",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F954d1d59-2325-4102-9073-52ad5f387d74%2Fupload-1671754381824.webp&w=1920&q=75", "SD05"]
+			["Base", "https://cdn.cerealapis.com/post/954d1d59-2325-4102-9073-52ad5f387d74/upload-1671754381824.webp", "SD05"]
 		]
 	},
 	"Sproutyr": {
@@ -262,9 +262,9 @@
 		"Spirit_Type": null,
 		"App_Code": "sd01-001",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fa543898e-55f6-42e2-bec6-949097e41641%2Fupload-1671750087147.webp&w=1920&q=75", "SD01"],
-			["Artist's", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F5876a62c-a1c8-46bd-9426-d357d9d6389e%2Fupload-1682804875111.webp&w=1920&q=75", "AC1"],
-			["Stellar", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Ff6169f09-b3f8-4f7b-a438-21fd5c653574%2Fupload-1682806490913.webp&w=1920&q=75", "SD01"]
+			["Base", "https://cdn.cerealapis.com/post/a543898e-55f6-42e2-bec6-949097e41641/upload-1671750087147.webp", "SD01"],
+			["Artist's", "https://cdn.cerealapis.com/post/5876a62c-a1c8-46bd-9426-d357d9d6389e/upload-1682804875111.webp", "AC1"],
+			["Stellar", "https://cdn.cerealapis.com/post/f6169f09-b3f8-4f7b-a438-21fd5c653574/upload-1682806490913.webp", "SD01"]
 		]
 	},
 	"Satymber": {
@@ -276,7 +276,7 @@
 		"Spirit_Type": null,
 		"App_Code": "sd01-002",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fa75cab66-4e58-4b8c-a965-2bf327182c32%2Fupload-1671750123590.webp&w=1920&q=75", "SD01"]
+			["Base", "https://cdn.cerealapis.com/post/a75cab66-4e58-4b8c-a965-2bf327182c32/upload-1671750123590.webp", "SD01"]
 		]
 	},
 	"Centaurbor": {
@@ -288,8 +288,8 @@
 		"Spirit_Type": null,
 		"App_Code": "sd01-003",
 		"Arts": [
-			["Base", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2Fe2c05d01-0140-4e25-9f27-ebc9d822aee1%2Fupload-1682806109961.webp&w=1920&q=75", "SD01"],
-			["Full Art", "https://www.elestrals.com/_next/image?url=https%3A%2F%2Fcdn.cerealapis.com%2Fpost%2F0fbbdb3c-f964-40af-a7d9-ea442560a2a1%2Fupload-1682805806736.webp&w=1920&q=75", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/e2c05d01-0140-4e25-9f27-ebc9d822aee1/upload-1682806109961.webp", "SD01"],
+			["Full Art", "https://cdn.cerealapis.com/post/0fbbdb3c-f964-40af-a7d9-ea442560a2a1/upload-1682805806736.webp", "BS1"]
 		]
 	}
 }

@@ -7,6 +7,7 @@
 script = ExtResource("1_fots0")
 
 [node name="Catalog" parent="." instance=ExtResource("1_v313s")]
+visible = false
 position = Vector2(691.2, 0)
 
 [connection signal="catalog_cards_updated" from="Catalog" to="." method="_on_catalog_catalog_cards_updated"]

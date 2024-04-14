@@ -1,9 +1,29 @@
 extends Node2D
 
-
+signal image_installed
+var card_file: FileAccess
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	var http_request = HTTPRequest.new()
+	add_child(http_request)
+	http_request.request_completed.connect(self._http_request_completed)
+	var dir = DirAccess.open("user://Cards")
+	if !dir:
+		DirAccess.open("user://").make_dir("Cards")
+		dir = DirAccess.open("user://Cards")
+	var cards = JSON.parse_string(FileAccess.get_file_as_string("res://card_information.json"))
+	for card_name in cards:
+		var card_data = cards[card_name]
+		if card_data["Type"] == "Template":
+			continue
+		for Art in card_data["Arts"]:
+			if "{0} {1} {2}.webp".format([Art[2], card_name, Art[0]]) not in dir.get_files():
+				card_file = FileAccess.open("user://Cards/{0} {1} {2}.webp".format([Art[2], card_name, Art[0]]), FileAccess.WRITE)
+				var error = http_request.request(Art[1])
+				if error != OK:
+					push_error("An error occurred in the HTTP request.")
+				await image_installed
+	$Catalog.visible = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -29,3 +49,11 @@ func _on_base_card_card_inspected(image):
 	card.texture = image
 	await card.card_inspected
 	card.queue_free()
+
+func _http_request_completed(result, response_code, headers, body):
+	if result != HTTPRequest.RESULT_SUCCESS:
+		push_error("Image couldn't be downloaded. Try a different image. Response Code: {0}".format([response_code]))
+	var card_image = Image.new()
+	card_file.store_buffer(body)
+	card_file = null
+	emit_signal("image_installed")

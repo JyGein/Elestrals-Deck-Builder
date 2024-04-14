@@ -45,13 +45,15 @@ func _on_base_card_card_inspected(image):
 	var card = instancedCard.instantiate()
 	add_child(card)
 	var CARD_WIDTH = 412
+	card.texture = image
 	var scale_factor = CARD_WIDTH/card.texture.get_size().x
 	card.scale = Vector2(scale_factor, scale_factor)
 	@warning_ignore("integer_division")
 	card.position = Vector2(1152/2 - scale_factor*card.texture.get_size().x/2, 648/2 - scale_factor*card.texture.get_size().y/2)
 	card.z_index = 10
-	card.texture = image
+	$"disable interactions".visible = true
 	await card.card_inspected
+	$"disable interactions".visible = false
 	card.queue_free()
 
 func _http_request_completed(result, response_code, headers, body):

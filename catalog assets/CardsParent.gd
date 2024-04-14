@@ -9,7 +9,7 @@ var CARD_HEIGHT
 @export var CATALOG_HEIGHT: int
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	CATALOG_WIDTH = $"../Bg".texture.get_size().x
+	CATALOG_WIDTH = $"../../Bg".texture.get_size().x
 	SPACING = CATALOG_WIDTH*0.01
 	CARD_WIDTH = (CATALOG_WIDTH*0.8-3*SPACING)/4
 	CARD_HEIGHT = (CARD_WIDTH*1125)/825

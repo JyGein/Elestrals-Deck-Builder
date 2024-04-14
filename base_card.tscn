@@ -14,5 +14,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 825.0
 offset_bottom = 1125.0
+mouse_filter = 1
 
+[connection signal="texture_changed" from="." to="." method="_on_texture_changed"]
 [connection signal="gui_input" from="Interaction" to="." method="_on_interaction_gui_input"]

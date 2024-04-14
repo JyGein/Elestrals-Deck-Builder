@@ -17,3 +17,7 @@ func _on_interaction_gui_input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == 2 && event.pressed:
 			emit_signal("card_inspected", texture)
+
+
+func _on_texture_changed():
+	$Interaction.size = texture.get_size()

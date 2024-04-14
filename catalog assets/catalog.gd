@@ -11,7 +11,7 @@ func _process(delta):
 	pass
 
 func load_cards(cards):
-	$"Cards Parent".load_cards(cards)
+	$"Manual Drag Button/Cards Parent".load_cards(cards)
 	pass
 
 func _on_cards_parent_spawned_cards(cards):

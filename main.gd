@@ -27,6 +27,7 @@ func _ready():
 					push_error("An error occurred in the HTTP request.")
 				await image_installed
 	$Catalog.visible = true
+	$"Deck Builder".visible = true
 	$Catalog.load_cards(cards)
 
 

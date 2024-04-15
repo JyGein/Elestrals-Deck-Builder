@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://duwha5cn8ui8f"]
+[gd_scene load_steps=4 format=3 uid="uid://duwha5cn8ui8f"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_fots0"]
 [ext_resource type="PackedScene" uid="uid://w2nd7q4uuxd0" path="res://catalog.tscn" id="1_v313s"]
+[ext_resource type="PackedScene" uid="uid://chiemseb8tbqb" path="res://deck_builder.tscn" id="3_yirrf"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_fots0")
@@ -23,5 +24,8 @@ layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 color = Color(0, 0, 0, 0.513726)
+
+[node name="Deck Builder" parent="." instance=ExtResource("3_yirrf")]
+visible = false
 
 [connection signal="catalog_cards_updated" from="Catalog" to="." method="_on_catalog_catalog_cards_updated"]

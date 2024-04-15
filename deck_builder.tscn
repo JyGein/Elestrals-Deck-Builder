@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://chiemseb8tbqb"]
+
+[ext_resource type="Texture2D" uid="uid://bi2f1pftp7c26" path="res://deck builder assets/bg.svg" id="1_yo4mf"]
+
+[node name="Deck Builder" type="Node2D"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture = ExtResource("1_yo4mf")
+centered = false

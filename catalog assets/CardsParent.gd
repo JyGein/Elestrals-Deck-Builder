@@ -7,18 +7,21 @@ var SPACING
 var CARD_WIDTH
 var CARD_HEIGHT
 @export var CATALOG_HEIGHT: int
+var is_loading: bool
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	is_loading = true
 	CATALOG_WIDTH = $"../../Bg".texture.get_size().x
 	SPACING = CATALOG_WIDTH*0.01
 	CARD_WIDTH = (CATALOG_WIDTH*0.8-3*SPACING)/4
 	CARD_HEIGHT = (CARD_WIDTH*1125)/825
-	CATALOG_HEIGHT = 0 - SPACING
+	CATALOG_HEIGHT = 0
 
 func load_cards(card_data):
-	for child in get_children():
+	for child in card_objects:
 		child.queue_free()
 	var instancedCard = preload("res://base_card.tscn")
+	position.y = 0
 	var count = 0
 	var regex = RegEx.new()
 	regex.compile(r".+\.([A-z]{3,4})")
@@ -38,19 +41,22 @@ func load_cards(card_data):
 					@warning_ignore("integer_division")
 					card.position = Vector2((CATALOG_WIDTH*0.1)+(count%4)*(CARD_WIDTH+SPACING), (CATALOG_WIDTH*0.1)+(count/4)*(CARD_HEIGHT+SPACING)) #warning-ignore:integer_division
 					card.card_data = card_data[card_name]
+					card.select_art(Art)
 					card.card_name = card_name
 				count+=1
 	emit_signal("spawned_cards", card_objects)
 	@warning_ignore("integer_division")
 	CATALOG_HEIGHT = ((count/4)*(CARD_HEIGHT+SPACING)-SPACING)
+	is_loading = false
 
 var last_drag_time = 0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if position.y > 0 && Time.get_ticks_msec() > (last_drag_time+100):
-		position.y-=(position.y+10)*(1.0/10.0)
-	if position.y < -CATALOG_HEIGHT && Time.get_ticks_msec() > (last_drag_time+100):
-		position.y-=(position.y+CATALOG_HEIGHT-10)*(1.0/10.0)
+	if !is_loading && Time.get_ticks_msec() > (last_drag_time+100):
+		if position.y > 0:
+			position.y-=(position.y+10)*(1.0/10.0)
+		if position.y < -CATALOG_HEIGHT:
+			position.y-=(position.y+CATALOG_HEIGHT-10)*(1.0/10.0)
 
 func _on_manual_drag_button_gui_input(event):
 	if event is InputEventMouseMotion:

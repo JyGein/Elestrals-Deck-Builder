@@ -39,7 +39,7 @@ func _process(delta):
 func _on_catalog_catalog_cards_updated(cards):
 	for card_node in cards:
 		card_node.card_inspected.connect(_on_base_card_card_inspected)
-	
+		card_node.card_selected.connect(_on_catalog_card_selected)
 
 func _on_base_card_card_inspected(image):
 	var instancedCard = preload("res://base_card.tscn")
@@ -56,6 +56,9 @@ func _on_base_card_card_inspected(image):
 	await card.card_inspected
 	$"disable interactions".visible = false
 	card.queue_free()
+
+func _on_catalog_card_selected(card_name, card_data):
+	$"Deck Builder".add_card(card_name, card_data)
 
 func _http_request_completed(result, response_code, headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS:

@@ -1,6 +1,6 @@
 extends Node2D
 
-signal spawned_cards(cards)
+signal spawned_card(card)
 var card_objects = []
 var SPACING
 var CARD_WIDTH
@@ -26,6 +26,19 @@ func add_card(card_name, card_data):
 	var Art = card_data["Art"]
 	var image_type = regex.search(Art[1]).get_string(1)
 	var image_path = "user://Cards/{0} {1} {2}.{3}".format([Art[2], card_name, Art[0], image_type])
-	load("res://base_card.tscn").instantiate()
-	
-	pass
+	var card = load("res://base_card.tscn").instantiate()
+	card_objects.append(card)
+	$"Manual Drag Button/Cards Parent".add_child(card)
+	var card_image = Image.load_from_file(image_path)
+	card.texture = ImageTexture.create_from_image(card_image)
+	if card.texture:
+		var scale_factor = CARD_WIDTH/card.texture.get_size().x
+		card.scale = Vector2(scale_factor, scale_factor)
+		@warning_ignore("integer_division")
+		card.position = Vector2((DECK_WIDTH*0.1)+(count%4)*(CARD_WIDTH+SPACING), (DECK_WIDTH*0.1)+(count/4)*(CARD_HEIGHT+SPACING))
+		card.card_data = card_data
+		card.select_art(Art)
+		card.card_name = card_name
+	count+=1
+	emit_signal("spawned_card", card)
+	DECK_HEIGHT = ((count/4)*(CARD_HEIGHT+SPACING)-SPACING)

@@ -39,7 +39,7 @@ func load_cards(card_data):
 					var scale_factor = CARD_WIDTH/card.texture.get_size().x
 					card.scale = Vector2(scale_factor, scale_factor)
 					@warning_ignore("integer_division")
-					card.position = Vector2((CATALOG_WIDTH*0.1)+(count%4)*(CARD_WIDTH+SPACING), (CATALOG_WIDTH*0.1)+(count/4)*(CARD_HEIGHT+SPACING)) #warning-ignore:integer_division
+					card.position = Vector2((CATALOG_WIDTH*0.1)+(count%4)*(CARD_WIDTH+SPACING), (CATALOG_WIDTH*0.1)+(count/4)*(CARD_HEIGHT+SPACING))
 					card.card_data = card_data[card_name]
 					card.select_art(Art)
 					card.card_name = card_name

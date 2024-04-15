@@ -7,6 +7,7 @@ func _ready():
 	var http_request = HTTPRequest.new()
 	add_child(http_request)
 	http_request.request_completed.connect(self._http_request_completed)
+	$"Title Bg/LoadingBarOutline/Loading Bar".size.x = 0
 	var dir = DirAccess.open("user://Cards")
 	if !dir:
 		DirAccess.open("user://").make_dir("Cards")
@@ -29,12 +30,16 @@ func _ready():
 	$Catalog.visible = true
 	$"Deck Builder".visible = true
 	$Catalog.load_cards(cards)
+	$"Title Bg".fade_out()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
+func _on_deck_builder_spawned_card(card):
+	card.card_inspected.connect(_on_base_card_card_inspected)
+	card.card_selected.connect(_on_deck_card_selected)
 
 func _on_catalog_catalog_cards_updated(cards):
 	for card_node in cards:
@@ -57,8 +62,11 @@ func _on_base_card_card_inspected(image):
 	$"disable interactions".visible = false
 	card.queue_free()
 
-func _on_catalog_card_selected(card_name, card_data):
+func _on_catalog_card_selected(card_name, card_data, card_node):
 	$"Deck Builder".add_card(card_name, card_data)
+
+func _on_deck_card_selected(card_name, card_data, card_node):
+	card_node.queue_free()
 
 func _http_request_completed(result, response_code, headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS:

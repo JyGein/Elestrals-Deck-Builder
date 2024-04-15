@@ -14,4 +14,4 @@ func fade_out():
 	while modulate.a > 0:
 		modulate.a -= 0.025
 		await get_tree().create_timer(0.05).timeout
-	
+	visible = false

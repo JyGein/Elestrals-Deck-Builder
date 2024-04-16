@@ -40,6 +40,7 @@ func _ready():
 					$"Title Bg".loaded_item()
 	$Catalog.visible = true
 	$"Deck Builder".visible = true
+	$"Esc Button".visible = true
 	$"Title Bg".set_loading_max(art_amount)
 	await $Catalog.load_cards(cards)
 	$"Title Bg".fade_out()
@@ -80,6 +81,10 @@ func _on_catalog_card_selected(card_name, card_data, card_node):
 func _on_deck_card_selected(card_name, card_data, card_node):
 	card_node.queue_free()
 	$"Deck Builder".card_objects.erase(card_node)
+	if card_data["Type"] == "Spirit":
+		$"Deck Builder".spirit_deck_amount -= 1
+	else:
+		$"Deck Builder".main_deck_amount -= 1
 	$"Deck Builder".sort()
 
 func _http_request_completed(result, response_code, headers, body):
@@ -91,3 +96,6 @@ func _http_request_completed(result, response_code, headers, body):
 	card_file.store_buffer(body)
 	card_file = null
 	emit_signal("image_installed")
+
+func _on_esc_button_pressed():
+	pass # Replace with function body.

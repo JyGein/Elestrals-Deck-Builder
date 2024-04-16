@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://duwha5cn8ui8f"]
+[gd_scene load_steps=7 format=3 uid="uid://duwha5cn8ui8f"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_fots0"]
 [ext_resource type="PackedScene" uid="uid://w2nd7q4uuxd0" path="res://catalog.tscn" id="1_v313s"]
 [ext_resource type="PackedScene" uid="uid://chiemseb8tbqb" path="res://deck_builder.tscn" id="3_yirrf"]
+[ext_resource type="Texture2D" uid="uid://u7ppbhj4i6vu" path="res://hamburger button.svg" id="4_83wa3"]
 [ext_resource type="PackedScene" uid="uid://bnv54n5757w70" path="res://main menu assets/title_bg.tscn" id="4_qhge2"]
+[ext_resource type="Texture2D" uid="uid://b0d8vhchiqqab" path="res://hamburger button pressed.svg" id="5_s1hju"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_fots0")
@@ -14,6 +16,15 @@ position = Vector2(691.2, 0)
 
 [node name="Deck Builder" parent="." instance=ExtResource("3_yirrf")]
 visible = false
+
+[node name="Esc Button" type="TextureButton" parent="."]
+visible = false
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 48.0
+offset_bottom = 47.0
+texture_normal = ExtResource("4_83wa3")
+texture_pressed = ExtResource("5_s1hju")
 
 [node name="disable interactions" type="Control" parent="."]
 visible = false
@@ -30,9 +41,19 @@ offset_bottom = 648.0
 color = Color(0, 0, 0, 0.513726)
 
 [node name="Title Bg" parent="." instance=ExtResource("4_qhge2")]
+visible = false
+
+[node name="Esc Menu" type="ColorRect" parent="."]
+visible = false
+offset_left = 401.0
+offset_top = 124.0
+offset_right = 751.0
+offset_bottom = 524.0
+color = Color(0, 0, 0, 1)
 
 [connection signal="catalog_cards_updated" from="Catalog" to="." method="_on_catalog_catalog_cards_updated"]
 [connection signal="loaded_card" from="Catalog" to="Title Bg" method="_on_catalog_loaded_card"]
 [connection signal="spawned_card" from="Deck Builder" to="." method="_on_deck_builder_spawned_card"]
+[connection signal="pressed" from="Esc Button" to="." method="_on_esc_button_pressed"]
 
 [editable path="Title Bg"]

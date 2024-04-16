@@ -8,6 +8,8 @@ var CARD_HEIGHT
 var DECK_WIDTH
 var DECK_HEIGHT
 var count = 0
+var main_deck_amount: int = 0
+var spirit_deck_amount: int = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	DECK_WIDTH = $Bg.texture.get_size().x
@@ -17,6 +19,22 @@ func _ready():
 	DECK_HEIGHT = 0
 
 func add_card(card_name, card_data):
+	if card_data["Type"] == "Spirit":
+		if spirit_deck_amount >= 20: 
+			return
+	else:
+		if main_deck_amount >= 40:
+			return
+		var same_card_amount: int = 0
+		for card in card_objects:
+			if card.card_name == card_name:
+				same_card_amount += 1
+		if same_card_amount >= 3:
+			return
+	if card_data["Type"] == "Spirit":
+		spirit_deck_amount += 1
+	else:
+		main_deck_amount += 1
 	var regex = RegEx.new()
 	regex.compile(r".+\.([A-z]{3,4})")
 	var Art = card_data["Art"]

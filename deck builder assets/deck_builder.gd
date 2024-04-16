@@ -1,7 +1,7 @@
 extends Node2D
 
 signal spawned_card(card)
-var card_objects = []
+var card_objects: Array[Node] = []
 var SPACING
 var CARD_WIDTH
 var CARD_HEIGHT
@@ -34,11 +34,16 @@ func add_card(card_name, card_data):
 	if card.texture:
 		var scale_factor = CARD_WIDTH/card.texture.get_size().x
 		card.scale = Vector2(scale_factor, scale_factor)
-		@warning_ignore("integer_division")
-		card.position = Vector2((DECK_WIDTH*0.1)+(count%4)*(CARD_WIDTH+SPACING), (DECK_WIDTH*0.1)+(count/4)*(CARD_HEIGHT+SPACING))
 		card.card_data = card_data
-		card.select_art(Art)
 		card.card_name = card_name
-	count+=1
+	sort()
 	emit_signal("spawned_card", card)
-	DECK_HEIGHT = ((count/4)*(CARD_HEIGHT+SPACING)-SPACING)
+
+func sort():
+	count = 0
+	for card in card_objects:
+		@warning_ignore("integer_division")
+		card.position = Vector2((DECK_WIDTH*0.1)+(count%5)*(CARD_WIDTH+SPACING), (DECK_WIDTH*0.1)+(count/5)*(CARD_HEIGHT+SPACING))
+		count += 1
+	@warning_ignore("integer_division")
+	DECK_HEIGHT = ((count/5)*(CARD_HEIGHT+SPACING)-SPACING)

@@ -40,9 +40,9 @@ func load_cards(card_data):
 					card.scale = Vector2(scale_factor, scale_factor)
 					@warning_ignore("integer_division")
 					card.position = Vector2((CATALOG_WIDTH*0.1)+(count%4)*(CARD_WIDTH+SPACING), (CATALOG_WIDTH*0.1)+(count/4)*(CARD_HEIGHT+SPACING))
-					card.card_data = card_data[card_name]
+					card.set_card_data(card_data[card_name])
 					card.select_art(Art)
-					card.card_name = card_name
+					card.set_card_name(card_name)
 				count+=1
 	emit_signal("spawned_cards", card_objects)
 	@warning_ignore("integer_division")

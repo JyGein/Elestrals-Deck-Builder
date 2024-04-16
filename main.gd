@@ -8,25 +8,36 @@ func _ready():
 	add_child(http_request)
 	http_request.request_completed.connect(self._http_request_completed)
 	$"Title Bg/LoadingBarOutline/Loading Bar".size.x = 0
-	var dir = DirAccess.open("user://Cards")
+	var dir: DirAccess = DirAccess.open("user://Cards")
 	if !dir:
 		DirAccess.open("user://").make_dir("Cards")
 		dir = DirAccess.open("user://Cards")
 	var cards = JSON.parse_string(FileAccess.get_file_as_string("res://card_information.json"))
 	var regex = RegEx.new()
 	regex.compile(r".+\.([A-z]{3,4})")
+	var art_amount: int = 0
 	for card_name in cards:
 		var card_data = cards[card_name]
 		if card_data["Type"] == "Template":
 			continue
 		for Art in card_data["Arts"]:
-			var image_type = regex.search(Art[1]).get_string(1)
-			if "{0} {1} {2}.{3}".format([Art[2], card_name, Art[0], image_type]) not in dir.get_files():
-				card_file = FileAccess.open("user://Cards/{0} {1} {2}.{3}".format([Art[2], card_name, Art[0], image_type]), FileAccess.WRITE)
-				var error = http_request.request(Art[1])
-				if error != OK:
-					push_error("An error occurred in the HTTP request.")
-				await image_installed
+			art_amount += 1
+	var downloaded_amount = dir.get_files().size()
+	if art_amount != downloaded_amount:
+		$"Title Bg".set_loading_max(art_amount - downloaded_amount)
+		for card_name in cards:
+			var card_data = cards[card_name]
+			if card_data["Type"] == "Template":
+				continue
+			for Art in card_data["Arts"]:
+				var image_type = regex.search(Art[1]).get_string(1)
+				if "{0} {1} {2}.{3}".format([Art[2], card_name, Art[0], image_type]) not in dir.get_files():
+					card_file = FileAccess.open("user://Cards/{0} {1} {2}.{3}".format([Art[2], card_name, Art[0], image_type]), FileAccess.WRITE)
+					var error = http_request.request(Art[1])
+					if error != OK:
+						push_error("An error occurred in the HTTP request.")
+					await image_installed
+					$"Title Bg".loaded_item()
 	$Catalog.visible = true
 	$"Deck Builder".visible = true
 	$Catalog.load_cards(cards)
@@ -35,7 +46,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	pass 
 
 func _on_deck_builder_spawned_card(card):
 	card.card_inspected.connect(_on_base_card_card_inspected)
@@ -67,6 +78,8 @@ func _on_catalog_card_selected(card_name, card_data, card_node):
 
 func _on_deck_card_selected(card_name, card_data, card_node):
 	card_node.queue_free()
+	$"Deck Builder".card_objects.erase(card_node)
+	$"Deck Builder".sort()
 
 func _http_request_completed(result, response_code, headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS:

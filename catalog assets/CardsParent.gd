@@ -1,11 +1,13 @@
 extends Node2D
 
 signal spawned_cards(cards)
+signal loaded_card
 var card_objects = []
 var CATALOG_WIDTH
 var SPACING
 var CARD_WIDTH
 var CARD_HEIGHT
+var count = 0
 @export var CATALOG_HEIGHT: int
 var is_loading: bool
 # Called when the node enters the scene tree for the first time.
@@ -22,7 +24,6 @@ func load_cards(card_data):
 		child.queue_free()
 	var instancedCard = preload("res://base_card.tscn")
 	position.y = 0
-	var count = 0
 	var regex = RegEx.new()
 	regex.compile(r".+\.([A-z]{3,4})")
 	for card_name in card_data:
@@ -43,6 +44,7 @@ func load_cards(card_data):
 					card.set_card_data(card_data[card_name])
 					card.select_art(Art)
 					card.set_card_name(card_name)
+				emit_signal("loaded_card")
 				count+=1
 	emit_signal("spawned_cards", card_objects)
 	@warning_ignore("integer_division")
@@ -54,9 +56,9 @@ var last_drag_time = 0
 func _process(delta):
 	if !is_loading && Time.get_ticks_msec() > (last_drag_time+100):
 		if position.y > 0:
-			position.y-=(position.y+10)*(1.0/10.0)
+			position.y -= (position.y+10)*(1.0/10.0)
 		if position.y < -CATALOG_HEIGHT:
-			position.y-=(position.y+CATALOG_HEIGHT-10)*(1.0/10.0)
+			position.y -= (position.y+CATALOG_HEIGHT-10)*(1.0/10.0)
 
 func _on_manual_drag_button_gui_input(event):
 	if event is InputEventMouseMotion:

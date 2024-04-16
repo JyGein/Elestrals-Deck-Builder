@@ -12,7 +12,7 @@ func _ready():
 	if !dir:
 		DirAccess.open("user://").make_dir("Cards")
 		dir = DirAccess.open("user://Cards")
-	var cards = JSON.parse_string(FileAccess.get_file_as_string("res://card_information.json"))
+	var cards: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://card_information.json"))
 	var regex = RegEx.new()
 	regex.compile(r".+\.([A-z]{3,4})")
 	var art_amount: int = 0
@@ -40,7 +40,8 @@ func _ready():
 					$"Title Bg".loaded_item()
 	$Catalog.visible = true
 	$"Deck Builder".visible = true
-	$Catalog.load_cards(cards)
+	$"Title Bg".set_loading_max(art_amount)
+	await $Catalog.load_cards(cards)
 	$"Title Bg".fade_out()
 
 

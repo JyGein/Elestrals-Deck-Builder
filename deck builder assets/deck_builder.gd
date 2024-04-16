@@ -16,10 +16,6 @@ func _ready():
 	CARD_HEIGHT = (CARD_WIDTH*1125)/825
 	DECK_HEIGHT = 0
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 func add_card(card_name, card_data):
 	var regex = RegEx.new()
 	regex.compile(r".+\.([A-z]{3,4})")
@@ -41,9 +37,67 @@ func add_card(card_name, card_data):
 
 func sort():
 	count = 0
+	card_objects.sort_custom(func (a, b): return sort_cards(a, b))
 	for card in card_objects:
 		@warning_ignore("integer_division")
 		card.position = Vector2((DECK_WIDTH*0.1)+(count%5)*(CARD_WIDTH+SPACING), (DECK_WIDTH*0.1)+(count/5)*(CARD_HEIGHT+SPACING))
 		count += 1
 	@warning_ignore("integer_division")
 	DECK_HEIGHT = ((count/5)*(CARD_HEIGHT+SPACING)-SPACING)
+
+func sort_alphabetical(a: String, b: String):
+	var result: Array[String] = ["", ""]
+	var a_result: String = ""
+	var b_result: String = ""
+	for i in range(a.length()):
+		a_result += String.num_int64(a.unicode_at(i))
+	for i in range(b.length()):
+		b_result += String.num_int64(b.unicode_at(i))
+	result[0] = a_result
+	result[1] = b_result
+	result.sort()
+	return result[1] != b_result
+
+func sort_array_length(a, b):
+	if a && b:
+		return a.size() > b.size()
+	if a:
+		return true
+	return false
+
+func sort_card_type(a, b):
+	if a == "Spirit" or b == "Elestral":
+		return false
+	if a == "Elestral" or b == "Spirit":
+		return true
+	return false
+
+func sort_cards(a, b):
+	if a.card_data["Type"] != b.card_data["Type"]:
+		return sort_card_type(a.card_data["Type"], b.card_data["Type"])
+	if a.card_data["Cost"] && b.card_data["Cost"] && a.card_data["Cost"].size() != b.card_data["Cost"].size():
+		return sort_array_length(a.card_data["Cost"], b.card_data["Cost"])
+	if a.card_data["Spirit_Type"] != b.card_data["Spirit_Type"]:
+		return sort_alphabetical(a.card_data["Spirit_Type"], b.card_data["Spirit_Type"])
+	if a.card_name != b.card_name:
+		return sort_alphabetical(a.card_name, b.card_name)
+	if a.card_data["Art"][2] != b.card_data["Art"][2]:
+		return sort_alphabetical(a.card_data["Art"][2], b.card_data["Art"][2])
+	if a.card_data["Art"][0] != b.card_data["Art"][0]:
+		return sort_alphabetical(a.card_data["Art"][0], b.card_data["Art"][0])
+	return false
+
+var last_drag_time: int = 0
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if Time.get_ticks_msec() > (last_drag_time+100):
+		if $"Manual Drag Button/Cards Parent".position.y > 0:
+			$"Manual Drag Button/Cards Parent".position.y -= ($"Manual Drag Button/Cards Parent".position.y+10)*(1.0/10.0)
+		if $"Manual Drag Button/Cards Parent".position.y < -DECK_HEIGHT:
+			$"Manual Drag Button/Cards Parent".position.y -= ($"Manual Drag Button/Cards Parent".position.y+DECK_HEIGHT-10)*(1.0/10.0)
+
+func _on_manual_drag_button_gui_input(event):
+	if event is InputEventMouseMotion:
+		if event.button_mask == 1:
+			$"Manual Drag Button/Cards Parent".position.y += event.relative.y
+			last_drag_time = Time.get_ticks_msec()

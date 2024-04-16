@@ -1,7 +1,7 @@
 extends ColorRect
 
 var amount_to_load: int = 0
-const loading_bar_max_size = 376
+const loading_bar_max_size: float = 376
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -23,4 +23,7 @@ func set_loading_max(amount: int, dont_reset: bool = false):
 		$"LoadingBarOutline/Loading Bar".size.x = 0
 
 func loaded_item(amount: int = 1):
-	$"LoadingBarOutline/Loading Bar".size.x += amount * (loading_bar_max_size/amount_to_load)
+	$"LoadingBarOutline/Loading Bar".size.x += amount * (loading_bar_max_size/float(amount_to_load))
+
+func _on_catalog_loaded_card():
+	loaded_item()

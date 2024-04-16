@@ -19,3 +19,5 @@ disabled = true
 
 [node name="Cards Parent" type="Node2D" parent="Manual Drag Button"]
 position = Vector2(-26, 0)
+
+[connection signal="gui_input" from="Manual Drag Button" to="." method="_on_manual_drag_button_gui_input"]

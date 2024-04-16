@@ -50,6 +50,7 @@ offset_right = 428.0
 offset_bottom = 72.0
 
 [connection signal="gui_input" from="Manual Drag Button" to="Manual Drag Button/Cards Parent" method="_on_manual_drag_button_gui_input"]
+[connection signal="loaded_card" from="Manual Drag Button/Cards Parent" to="." method="_on_cards_parent_loaded_card"]
 [connection signal="spawned_cards" from="Manual Drag Button/Cards Parent" to="." method="_on_cards_parent_spawned_cards"]
 [connection signal="slider_sliding" from="Slider" to="Manual Drag Button/Cards Parent" method="_on_slider_slider_sliding"]
 [connection signal="gui_input" from="Slider/Slider Button/Slider Button Control" to="Slider" method="_on_slider_button_control_gui_input"]

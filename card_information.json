@@ -17,7 +17,7 @@
 		"Effect": "When this Penterror is destroyed by an opponent’s card effect you can Special Cast any number of Hydrake and Twindra from your hand or deck in Attack Position.",
 		"Stats": [15, 8],
 		"Subclasses": ["Dragon", "Eldritch"],
-		"Spirit_Type": null,
+		"Spirit_Type": "A",
 		"App_Code": "sd05-003",
 		"Arts": [
 			["Full Art", "https://cdn.cerealapis.com/post/fe28e581-8b4d-4afa-8a2f-d80c0481071e/upload-1682804184089.webp", "BS1"],
@@ -109,7 +109,7 @@
 		"Effect": "When this Necruff destroys an opponent’s Elestral in battle that opponent must Expend X.",
 		"Stats": [5, 1],
 		"Subclasses": ["Eldritch", "Brute"],
-		"Spirit_Type": null,
+		"Spirit_Type": "F",
 		"App_Code": "m13j9l20",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/55cc653d-86bb-4d6c-b4a3-f7e39decf672/upload-1671726661936.webp", "BS1"],
@@ -123,7 +123,7 @@
 		"Effect": "This Blazerus can attack twice during your Battle Phase. When this Blazerus destroys 2 Elestrals in the same Battle Phase you can Special Ascend this Blazerus to Trifernal from your hand or deck.",
 		"Stats": [7, 2],
 		"Subclasses": ["Eldritch", "Behemoth"],
-		"Spirit_Type": null,
+		"Spirit_Type": "F",
 		"App_Code": "1t29fwo5",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/d7d5a79d-96d7-4096-a909-57ea97159bd0/upload-1671726680542.webp", "BS1"]
@@ -135,7 +135,7 @@
 		"Effect": "When an opponent Casts an Elestral you can Expend F in order to give it -3 O until your next End Phase. If that Elestral’s O is reduced to 0 by this effect, it is destroyed.",
 		"Stats": [14, 3],
 		"Subclasses": ["Eldritch", "Behemoth"],
-		"Spirit_Type": null,
+		"Spirit_Type": "F",
 		"App_Code": "37kaz3ty",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/f2604fb6-cc3c-41d6-9575-e412d04b9d1b/upload-1671726699879.webp", "BS1"],
@@ -149,7 +149,7 @@
 		"Effect": "When you Cast this Sluggle you can return up to WWW from your Underworld to your Spirit Deck.",
 		"Stats": [2, 2],
 		"Subclasses": ["Oceanic"],
-		"Spirit_Type": null,
+		"Spirit_Type": "W",
 		"App_Code": "il184536",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/e4e6c2e4-1aec-4555-8945-1e7fead0dd91/upload-1671727004657.webp", "BS1"],
@@ -163,7 +163,7 @@
 		"Effect": "During your Main Phase you can Special Ascend this Glauby to Majesea from your hand or deck if it is WWW-Enchanted.",
 		"Stats": [4, 8],
 		"Subclasses": ["Oceanic"],
-		"Spirit_Type": null,
+		"Spirit_Type": "W",
 		"App_Code": "f4r15448",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/307cb039-8806-4a4e-9007-b15af583113b/upload-1671727020681.webp", "BS1"]
@@ -175,7 +175,7 @@
 		"Effect": "This Majesea gets +1 J for each Enchanting W on your field. W-Enchanted Elestrals cannot be targeted by an opponent’s Elestral effect.",
 		"Stats": [6, 14],
 		"Subclasses": ["Oceanic", "Dragon"],
-		"Spirit_Type": null,
+		"Spirit_Type": "W",
 		"App_Code": "7k2ov9nl",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/d70b9bf4-dd55-444c-940f-2d7f77f9d1ee/upload-1671727036134.webp", "BS1"],
@@ -189,7 +189,7 @@
 		"Effect": "When you Cast this Quackle you can return up to TTT from your Underworld to your Spirit Deck.",
 		"Stats": [2, 3],
 		"Subclasses": ["Avian", "Ethereal"],
-		"Spirit_Type": null,
+		"Spirit_Type": "T",
 		"App_Code": "010ljlpy",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/042aac89-0ad6-4b9a-a1ea-ee038d3e2637/upload-1671727460476.webp", "BS1"],
@@ -205,7 +205,7 @@
 		"Effect": "You can reveal 12 T from your Spirit Deck in order to Special Ascend this Cygnetrik to Ohmperial from your hand or deck.",
 		"Stats": [4, 6],
 		"Subclasses": ["Avian", "Ethereal"],
-		"Spirit_Type": null,
+		"Spirit_Type": "T",
 		"App_Code": "d991623a",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/041a7c45-ca35-4fb8-b651-c26ed0cd9929/upload-1671727475433.webp", "BS1"]
@@ -217,7 +217,7 @@
 		"Effect": "This Ohmperial gets +1 J for each T in your Spirit Deck. You can Expend T in order to target and destroy a card.",
 		"Stats": [8, 12],
 		"Subclasses": ["Avian", "Ethereal"],
-		"Spirit_Type": null,
+		"Spirit_Type": "T",
 		"App_Code": "3u1nmgdc",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/62a503f6-51c9-416b-9bcb-5d30da18f2a7/upload-1671727490904.webp", "BS1"],
@@ -231,7 +231,7 @@
 		"Effect": "When this Hydrake is destroyed in battle you can Special Cast a Twindra from your hand or deck in Attack Position.",
 		"Stats": [4, 1],
 		"Subclasses": ["Dragon", "Eldritch"],
-		"Spirit_Type": null,
+		"Spirit_Type": "A",
 		"App_Code": "sd05-001",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/d4913858-b793-4518-9a55-58ff210c5643/upload-1671754357410.webp", "SD05"],
@@ -247,7 +247,7 @@
 		"Effect": "When this Twindra is destroyed in battle you can Special Cast a Penterror from your hand or deck.",
 		"Stats": [5, 4],
 		"Subclasses": ["Dragon", "Eldritch"],
-		"Spirit_Type": null,
+		"Spirit_Type": "A",
 		"App_Code": "sd05-002",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/954d1d59-2325-4102-9073-52ad5f387d74/upload-1671754381824.webp", "SD05"]
@@ -259,7 +259,7 @@
 		"Effect": "When you Normal Cast this Sproutyr you can Search your deck for an Artifact and add it to your hand.",
 		"Stats": [3, 5],
 		"Subclasses": ["Dryad"],
-		"Spirit_Type": null,
+		"Spirit_Type": "E",
 		"App_Code": "sd01-001",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/a543898e-55f6-42e2-bec6-949097e41641/upload-1671750087147.webp", "SD01"],
@@ -273,7 +273,7 @@
 		"Effect": "When this Satymber is Empowered by your Artifact and destroys an Elestral in battle you can Nexus the Spirits from that Artifact to this Satymber and Special Ascend it to Centaurbor from your hand or deck.",
 		"Stats": [5, 7],
 		"Subclasses": ["Dryad"],
-		"Spirit_Type": null,
+		"Spirit_Type": "E",
 		"App_Code": "sd01-002",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/a75cab66-4e58-4b8c-a965-2bf327182c32/upload-1671750123590.webp", "SD01"]
@@ -285,7 +285,7 @@
 		"Effect": "You can Disenchant E from this Centaurbor in order to target and destroy a card. As long as Foloi Forest is Enchanted this Centaurbor cannot be targeted by Invoke Runes.",
 		"Stats": [11, 15],
 		"Subclasses": ["Dryad", "Behemoth"],
-		"Spirit_Type": null,
+		"Spirit_Type": "E",
 		"App_Code": "sd01-003",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/e2c05d01-0140-4e25-9f27-ebc9d822aee1/upload-1682806109961.webp", "SD01"],

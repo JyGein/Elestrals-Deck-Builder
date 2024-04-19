@@ -106,6 +106,7 @@ func sort_cards(a, b):
 	return false
 
 var last_drag_time: int = 0
+var last_Lclick_time: int = 0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Time.get_ticks_msec() > (last_drag_time+100):

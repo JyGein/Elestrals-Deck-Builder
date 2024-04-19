@@ -21,17 +21,22 @@ func set_card_data(new_card_data: Dictionary):
 func set_card_name(new_card_name: String):
 	card_name = new_card_name
 
-var last_mousebutton_event = InputEventMouseButton
+var last_mousebutton_event: InputEventMouseButton
 var last_mousebutton_event_time: int
+var last_event: InputEvent
+var parent_pos_at_press_down: int
 func _on_interaction_gui_input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == 2 && event.pressed:
 			emit_signal("card_inspected", texture)
+		elif event.button_index == 1 && event.pressed:
+			parent_pos_at_press_down = get_parent().position.y
 		elif event.button_index == 1 && !event.pressed:
-			if last_mousebutton_event.button_index == 1 && last_mousebutton_event.pressed && last_mousebutton_event_time+100 > Time.get_ticks_msec():
+			if last_mousebutton_event.button_index == 1 && last_mousebutton_event.pressed && ((get_parent().position.y - 25 < parent_pos_at_press_down && parent_pos_at_press_down < get_parent().position.y + 25) or last_event == last_mousebutton_event):
 				emit_signal("card_selected", card_name, card_data, self)
 		last_mousebutton_event = event
 		last_mousebutton_event_time = Time.get_ticks_msec()
+	last_event = event
 
 
 func _on_texture_changed():

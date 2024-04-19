@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bnv54n5757w70"]
+[gd_scene load_steps=5 format=3 uid="uid://bnv54n5757w70"]
 
 [ext_resource type="Script" path="res://main menu assets/Title Bg.gd" id="1_ugdeb"]
 [ext_resource type="Texture2D" uid="uid://dcv7hihx62iu1" path="res://main menu assets/Loading bar outline.svg" id="2_ri2q7"]
+[ext_resource type="FontFile" uid="uid://bjpaecf5oevg1" path="res://fonts/Alegreya-Bold.ttf" id="2_wyhqy"]
+[ext_resource type="FontFile" uid="uid://c8n11flq2dsj7" path="res://fonts/Alegreya-SemiBold.ttf" id="4_xf5h6"]
 
 [node name="Title Bg" type="ColorRect"]
 z_index = 10
@@ -10,17 +12,25 @@ offset_bottom = 648.0
 color = Color(0.317647, 0.211765, 0.298039, 1)
 script = ExtResource("1_ugdeb")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 355.5
-offset_top = 143.0
-offset_right = 796.5
-offset_bottom = 309.0
-theme_override_colors/default_color = Color(0, 0.745098, 1, 1)
-theme_override_font_sizes/normal_font_size = 66
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.352
+anchor_right = 0.5
+anchor_bottom = 0.352
+offset_left = -268.0
+offset_top = -127.096
+offset_right = 269.0
+offset_bottom = 125.904
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_wyhqy")
+theme_override_font_sizes/font_size = 91
 text = "Elestrals Deck
-	   Editor"
-scroll_active = false
+Builder"
+horizontal_alignment = 1
 
 [node name="LoadingBarOutline" type="Sprite2D" parent="."]
 z_index = 1
@@ -33,3 +43,38 @@ offset_left = 12.0
 offset_top = 12.0
 offset_right = 388.0
 offset_bottom = 38.0
+
+[node name="ThingLoading" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -123.5
+offset_top = -213.0
+offset_right = 123.5
+offset_bottom = -156.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_xf5h6")
+theme_override_font_sizes/font_size = 41
+text = "Loading Cards"
+horizontal_alignment = 1
+
+[node name="LoadedAmount" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -51.0
+offset_top = -162.0
+offset_right = 51.0
+offset_bottom = -112.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_xf5h6")
+theme_override_font_sizes/font_size = 36
+text = "123/125"

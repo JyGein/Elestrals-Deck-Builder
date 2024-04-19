@@ -25,6 +25,7 @@ func _ready():
 	var downloaded_amount = dir.get_files().size()
 	if art_amount != downloaded_amount:
 		$"Title Bg".set_loading_max(art_amount - downloaded_amount)
+		$"Title Bg".set_loading_text("Downloading Cards")
 		for card_name in cards:
 			var card_data = cards[card_name]
 			if card_data["Type"] == "Template":

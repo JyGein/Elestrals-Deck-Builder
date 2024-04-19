@@ -41,7 +41,6 @@ offset_bottom = 648.0
 color = Color(0, 0, 0, 0.513726)
 
 [node name="Title Bg" parent="." instance=ExtResource("4_qhge2")]
-visible = false
 
 [node name="Esc Menu" type="ColorRect" parent="."]
 visible = false
@@ -55,5 +54,3 @@ color = Color(0, 0, 0, 1)
 [connection signal="loaded_card" from="Catalog" to="Title Bg" method="_on_catalog_loaded_card"]
 [connection signal="spawned_card" from="Deck Builder" to="." method="_on_deck_builder_spawned_card"]
 [connection signal="pressed" from="Esc Button" to="." method="_on_esc_button_pressed"]
-
-[editable path="Title Bg"]

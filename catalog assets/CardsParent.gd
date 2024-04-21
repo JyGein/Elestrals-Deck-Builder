@@ -96,7 +96,7 @@ func sort_alphabetical(a: String, b: String):
 	result[0] = a_result
 	result[1] = b_result
 	result.sort()
-	return result[1] != b_result
+	return result[0] == a_result
 
 func sort_array_length(a, b):
 	if a && b:

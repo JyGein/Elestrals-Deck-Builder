@@ -8,22 +8,7 @@
 		"Spirit_Type": "",
 		"App_Code": "",
 		"Arts": [
-			["Rarity", "Link", "Set"]
-		]
-	},
-	"Penterror": {
-		"Cost": ["A", "A", "A"],
-		"Type": "Elestral",
-		"Effect": "When this Penterror is destroyed by an opponent’s card effect you can Special Cast any number of Hydrake and Twindra from your hand or deck in Attack Position.",
-		"Stats": [15, 8],
-		"Subclasses": ["Dragon", "Eldritch"],
-		"Spirit_Type": "A",
-		"App_Code": "sd05-003",
-		"Arts": [
-			["Full Art", "https://cdn.cerealapis.com/post/fe28e581-8b4d-4afa-8a2f-d80c0481071e/upload-1682804184089.webp", "BS1"],
-			["Base", "https://cdn.cerealapis.com/post/d449a3d5-cb98-4732-adde-d340c53810e6/upload-1682806159784.webp", "SD05"],
-			["Stained Glass", "https://cdn.cerealapis.com/post/5e3c9571-9f8d-45d9-bf21-ea9efd7a93f4/upload-1710357718072.png", "SS1"],
-			["Stellar Full Art", "https://cdn.cerealapis.com/post/d6f60aa9-4747-45fe-b0b5-fc9a7be16354/upload-1682806414982.webp", "BS1"]
+			["Rarity", "Link", "Set", "App_Code"]
 		]
 	},
 	"Teratlas": {
@@ -35,9 +20,9 @@
 		"Spirit_Type": "E",
 		"App_Code": "zy4pml9c",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/18941787-e3d0-47b3-a24d-1a083470bd32/upload-1671726241069.webp", "BS1"],
-			["Alt", "https://cdn.cerealapis.com/post/69ae2a4d-f5fd-4602-87d1-0fd15ca4325e/upload-1682805947161.webp", "BS1"],
-			["Stellar", "https://cdn.cerealapis.com/post/91c2e04a-6657-4b05-b835-825ffd9e6e7d/upload-1682806503603.webp", "PR1"]
+			["Base", "https://cdn.cerealapis.com/post/18941787-e3d0-47b3-a24d-1a083470bd32/upload-1671726241069.webp", "BS1", "zy4pml9c"],
+			["Alt", "https://cdn.cerealapis.com/post/69ae2a4d-f5fd-4602-87d1-0fd15ca4325e/upload-1682805947161.webp", "BS1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/91c2e04a-6657-4b05-b835-825ffd9e6e7d/upload-1682806503603.webp", "PR1", null]
 		]
 	},
 	"Vipyro": {
@@ -49,10 +34,10 @@
 		"Spirit_Type": "F",
 		"App_Code": "285245d8",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/29a88095-2d75-49be-868f-af31890141d9/upload-1671726265142.webp", "BS1"],
-			["Alt", "https://cdn.cerealapis.com/post/467e51db-fc70-43a4-9bf6-b36cf4a59b27/upload-1682805973821.webp", "BS1"],
-			["Artist's", "https://cdn.cerealapis.com/post/3e12d327-ffd6-44dd-8c18-ee112abcd650/upload-1682804654560.webp", "AC1"],
-			["Stellar", "https://cdn.cerealapis.com/post/3e8df3b6-6293-4470-bc27-729c50cd7c4a/upload-1682806516022.webp", "PR1"]
+			["Base", "https://cdn.cerealapis.com/post/29a88095-2d75-49be-868f-af31890141d9/upload-1671726265142.webp", "BS1", "285245d8"],
+			["Alt", "https://cdn.cerealapis.com/post/467e51db-fc70-43a4-9bf6-b36cf4a59b27/upload-1682805973821.webp", "BS1", null],
+			["Artist's", "https://cdn.cerealapis.com/post/3e12d327-ffd6-44dd-8c18-ee112abcd650/upload-1682804654560.webp", "AC1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/3e8df3b6-6293-4470-bc27-729c50cd7c4a/upload-1682806516022.webp", "PR1", null]
 		]
 	},
 	"Leviaphin": {
@@ -64,9 +49,9 @@
 		"Spirit_Type": "W",
 		"App_Code": "07hm45mc",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/0446225b-6da2-4735-82cd-84910a26e1c9/upload-1671726297539.webp", "BS1"],
-			["Alt", "https://cdn.cerealapis.com/post/3368f657-a137-4d6e-be3f-f6ba6d1d6ec0/upload-1682805988243.webp", "BS1"],
-			["Stellar", "https://cdn.cerealapis.com/post/0430ea50-bb94-4b60-8e6c-520f9b5e81bb/upload-1682806270189.webp", "PR1"]
+			["Base", "https://cdn.cerealapis.com/post/0446225b-6da2-4735-82cd-84910a26e1c9/upload-1671726297539.webp", "BS1", "07hm45mc"],
+			["Alt", "https://cdn.cerealapis.com/post/3368f657-a137-4d6e-be3f-f6ba6d1d6ec0/upload-1682805988243.webp", "BS1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/0430ea50-bb94-4b60-8e6c-520f9b5e81bb/upload-1682806270189.webp", "PR1", null]
 		]
 	},
 	"Zaptor": {
@@ -78,12 +63,12 @@
 		"Spirit_Type": "T",
 		"App_Code": "aly4rlvw",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/784adf9e-599b-442f-a2e3-c5a54ad695f8/upload-1671726315017.webp", "BS1"],
-			["Alt", "https://cdn.cerealapis.com/post/8fb59399-e813-49ce-9289-d1ad05d213ae/upload-1682806061535.webp", "BS1"],
-			["Full Art", "https://cdn.cerealapis.com/post/e4f9fea3-c8a6-4c3d-8fab-fb887fab6d65/upload-1709917394934.png", "SS1"],
-			["Full Art Holo", "https://cdn.cerealapis.com/post/84f4829d-9f02-4b48-9cbe-c8529ec7d546/upload-1709925276222.png", "SS1"],
-			["Artist's", "https://cdn.cerealapis.com/post/26476d7c-6315-4c51-8c49-30bcbb825baf/upload-1682804460065.webp", "AC1"],
-			["Stellar", "https://cdn.cerealapis.com/post/b25359bf-d01c-4909-9ff6-0717feddae7f/upload-1682806544299.webp", "PR1"]
+			["Base", "https://cdn.cerealapis.com/post/784adf9e-599b-442f-a2e3-c5a54ad695f8/upload-1671726315017.webp", "BS1", "aly4rlvw"],
+			["Alt", "https://cdn.cerealapis.com/post/8fb59399-e813-49ce-9289-d1ad05d213ae/upload-1682806061535.webp", "BS1", null],
+			["Full Art", "https://cdn.cerealapis.com/post/e4f9fea3-c8a6-4c3d-8fab-fb887fab6d65/upload-1709917394934.png", "SS1", "e5c1rsg9"],
+			["Full Art Holo", "https://cdn.cerealapis.com/post/84f4829d-9f02-4b48-9cbe-c8529ec7d546/upload-1709925276222.png", "SS1", null],
+			["Artist's", "https://cdn.cerealapis.com/post/26476d7c-6315-4c51-8c49-30bcbb825baf/upload-1682804460065.webp", "AC1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/b25359bf-d01c-4909-9ff6-0717feddae7f/upload-1682806544299.webp", "PR1", null]
 		]
 	},
 	"Lycarus": {
@@ -95,12 +80,12 @@
 		"Spirit_Type": "A",
 		"App_Code": "rx7p3ip8",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/f5e27d21-2612-4444-973e-b8b7c13b381c/upload-1671726332007.webp", "BS1"],
-			["Alt", "https://cdn.cerealapis.com/post/3448f7a4-faef-49ec-b27b-c12c4cabf1c5/upload-1682806093669.webp", "BS1"],
-			["Full Art", "https://cdn.cerealapis.com/post/c987f1b8-e37a-42cb-9d8c-78b05c7e35ae/upload-1710355396706.png", "SS1"],
-			["Full Art Holo", "https://cdn.cerealapis.com/post/23709caf-3966-4b7c-94f8-6a27e115c287/upload-1710357327376.png", "SS1"],
-			["Artist's", "https://cdn.cerealapis.com/post/54c8b972-7f59-45e4-8bc1-d8c7282a638a/upload-1682804785450.webp", "AC1"],
-			["Stellar", "https://cdn.cerealapis.com/post/796e2056-5abe-4d58-a2fc-23e1aacc7e1a/upload-1682806323005.webp", "PR1"]
+			["Base", "https://cdn.cerealapis.com/post/f5e27d21-2612-4444-973e-b8b7c13b381c/upload-1671726332007.webp", "BS1", "rx7p3ip8"],
+			["Alt", "https://cdn.cerealapis.com/post/3448f7a4-faef-49ec-b27b-c12c4cabf1c5/upload-1682806093669.webp", "BS1", null],
+			["Full Art", "https://cdn.cerealapis.com/post/c987f1b8-e37a-42cb-9d8c-78b05c7e35ae/upload-1710355396706.png", "SS1", "6jdblf5s"],
+			["Full Art Holo", "https://cdn.cerealapis.com/post/23709caf-3966-4b7c-94f8-6a27e115c287/upload-1710357327376.png", "SS1", null],
+			["Artist's", "https://cdn.cerealapis.com/post/54c8b972-7f59-45e4-8bc1-d8c7282a638a/upload-1682804785450.webp", "AC1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/796e2056-5abe-4d58-a2fc-23e1aacc7e1a/upload-1682806323005.webp", "PR1", null]
 		]
 	},
 	"Necruff": {
@@ -112,9 +97,9 @@
 		"Spirit_Type": "F",
 		"App_Code": "m13j9l20",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/55cc653d-86bb-4d6c-b4a3-f7e39decf672/upload-1671726661936.webp", "BS1"],
-			["Artist's", "https://cdn.cerealapis.com/post/f978efdb-0bca-48c4-8b4d-5c40962f55ab/upload-1682804907766.webp", "AC1"],
-			["Stellar", "https://cdn.cerealapis.com/post/2b4cf37b-675a-4d6a-89ad-85eb28ccb05b/upload-1682806380511.webp", "SD02"]
+			["Base", "https://cdn.cerealapis.com/post/55cc653d-86bb-4d6c-b4a3-f7e39decf672/upload-1671726661936.webp", "BS1", "m13j9l20"],
+			["Artist's", "https://cdn.cerealapis.com/post/f978efdb-0bca-48c4-8b4d-5c40962f55ab/upload-1682804907766.webp", "AC1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/2b4cf37b-675a-4d6a-89ad-85eb28ccb05b/upload-1682806380511.webp", "SD02", null]
 		]
 	},
 	"Blazerus": {
@@ -126,7 +111,7 @@
 		"Spirit_Type": "F",
 		"App_Code": "1t29fwo5",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/d7d5a79d-96d7-4096-a909-57ea97159bd0/upload-1671726680542.webp", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/d7d5a79d-96d7-4096-a909-57ea97159bd0/upload-1671726680542.webp", "BS1", "1t29fwo5"]
 		]
 	},
 	"Trifernal": {
@@ -138,9 +123,9 @@
 		"Spirit_Type": "F",
 		"App_Code": "37kaz3ty",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/f2604fb6-cc3c-41d6-9575-e412d04b9d1b/upload-1671726699879.webp", "BS1"],
-			["Holo", "https://cdn.cerealapis.com/post/c9c3050b-dfa7-4625-8bcc-ac68f8975e19/upload-1682806557373.webp", "SD02"],
-			["Full Art", "https://cdn.cerealapis.com/post/45310838-9a6d-4591-beda-57413147d30b/upload-1682805826124.webp", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/f2604fb6-cc3c-41d6-9575-e412d04b9d1b/upload-1671726699879.webp", "BS1", "37kaz3ty"],
+			["Holo", "https://cdn.cerealapis.com/post/c9c3050b-dfa7-4625-8bcc-ac68f8975e19/upload-1682806557373.webp", "SD02", null],
+			["Full Art", "https://cdn.cerealapis.com/post/45310838-9a6d-4591-beda-57413147d30b/upload-1682805826124.webp", "BS1", null]
 		]
 	},
 	"Sluggle": {
@@ -152,9 +137,9 @@
 		"Spirit_Type": "W",
 		"App_Code": "il184536",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/e4e6c2e4-1aec-4555-8945-1e7fead0dd91/upload-1671727004657.webp", "BS1"],
-			["Artist's", "https://cdn.cerealapis.com/post/9236ca9a-43fe-4cc8-a1e3-00ee394e2997/upload-1682804970333.webp", "AC1"],
-			["Stellar", "https://cdn.cerealapis.com/post/019ec81f-25cd-4f13-a3c3-7d7f7d4a02b1/upload-1682806456860.webp", "SD03"]
+			["Base", "https://cdn.cerealapis.com/post/e4e6c2e4-1aec-4555-8945-1e7fead0dd91/upload-1671727004657.webp", "BS1", "il184536"],
+			["Artist's", "https://cdn.cerealapis.com/post/9236ca9a-43fe-4cc8-a1e3-00ee394e2997/upload-1682804970333.webp", "AC1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/019ec81f-25cd-4f13-a3c3-7d7f7d4a02b1/upload-1682806456860.webp", "SD03", null]
 		]
 	},
 	"Glauby": {
@@ -166,7 +151,7 @@
 		"Spirit_Type": "W",
 		"App_Code": "f4r15448",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/307cb039-8806-4a4e-9007-b15af583113b/upload-1671727020681.webp", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/307cb039-8806-4a4e-9007-b15af583113b/upload-1671727020681.webp", "BS1", "f4r15448"]
 		]
 	},
 	"Majesea": {
@@ -178,9 +163,9 @@
 		"Spirit_Type": "W",
 		"App_Code": "7k2ov9nl",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/d70b9bf4-dd55-444c-940f-2d7f77f9d1ee/upload-1671727036134.webp", "BS1"],
-			["Holo", "https://cdn.cerealapis.com/post/f76c4d6c-e1d4-45f7-ba4f-5209d9d7b480/upload-1682806124469.webp", "SD03"],
-			["Full Art", "https://cdn.cerealapis.com/post/9d2c32ed-333a-4d3b-a329-0782ca688d29/upload-1682805881848.webp", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/d70b9bf4-dd55-444c-940f-2d7f77f9d1ee/upload-1671727036134.webp", "BS1", "7k2ov9nl"],
+			["Holo", "https://cdn.cerealapis.com/post/f76c4d6c-e1d4-45f7-ba4f-5209d9d7b480/upload-1682806124469.webp", "SD03", null],
+			["Full Art", "https://cdn.cerealapis.com/post/9d2c32ed-333a-4d3b-a329-0782ca688d29/upload-1682805881848.webp", "BS1", null]
 		]
 	},
 	"Quackle": {
@@ -192,11 +177,11 @@
 		"Spirit_Type": "T",
 		"App_Code": "010ljlpy",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/042aac89-0ad6-4b9a-a1ea-ee038d3e2637/upload-1671727460476.webp", "BS1"],
-			["Alt", "https://cdn.cerealapis.com/post/7c5715cf-c94c-4b87-af37-eaaf614be05e/upload-1709923739136.png", "SS1"],
-			["Artist's", "https://cdn.cerealapis.com/post/bd77306e-51d2-4b9f-b1af-50fb18dfc7b7/upload-1682805041535.webp", "AC1"],
-			["Artist's", "https://cdn.cerealapis.com/post/6c837542-59ae-4036-8137-f656d04511f3/upload-1682804746079.webp", "AC1"],
-			["Stellar", "https://cdn.cerealapis.com/post/a2bd27ec-63ed-4777-a445-b0f01a46854f/upload-1682806439371.webp", "SD04"]
+			["Base", "https://cdn.cerealapis.com/post/042aac89-0ad6-4b9a-a1ea-ee038d3e2637/upload-1671727460476.webp", "BS1", "010ljlpy"],
+			["Alt", "https://cdn.cerealapis.com/post/7c5715cf-c94c-4b87-af37-eaaf614be05e/upload-1709923739136.png", "SS1", "0leatsy3"],
+			["Artist's", "https://cdn.cerealapis.com/post/bd77306e-51d2-4b9f-b1af-50fb18dfc7b7/upload-1682805041535.webp", "AC1", null],
+			["Artist's", "https://cdn.cerealapis.com/post/6c837542-59ae-4036-8137-f656d04511f3/upload-1682804746079.webp", "AC1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/a2bd27ec-63ed-4777-a445-b0f01a46854f/upload-1682806439371.webp", "SD04", null]
 		]
 	},
 	"Cygnetrik": {
@@ -208,7 +193,7 @@
 		"Spirit_Type": "T",
 		"App_Code": "d991623a",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/041a7c45-ca35-4fb8-b651-c26ed0cd9929/upload-1671727475433.webp", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/041a7c45-ca35-4fb8-b651-c26ed0cd9929/upload-1671727475433.webp", "BS1", "d991623a"]
 		]
 	},
 	"Ohmperial": {
@@ -220,9 +205,9 @@
 		"Spirit_Type": "T",
 		"App_Code": "3u1nmgdc",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/62a503f6-51c9-416b-9bcb-5d30da18f2a7/upload-1671727490904.webp", "BS1"],
-			["Holo", "https://cdn.cerealapis.com/post/46e3f865-495c-45cd-bb8b-6744076df9cb/upload-1682806144524.webp", "SD04"],
-			["Full Art", "https://cdn.cerealapis.com/post/0e3ed8ff-0ad7-4cc8-9f23-a618afaa1b59/upload-1682805898293.webp", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/62a503f6-51c9-416b-9bcb-5d30da18f2a7/upload-1671727490904.webp", "BS1", "3u1nmgdc"],
+			["Holo", "https://cdn.cerealapis.com/post/46e3f865-495c-45cd-bb8b-6744076df9cb/upload-1682806144524.webp", "SD04", null],
+			["Full Art", "https://cdn.cerealapis.com/post/0e3ed8ff-0ad7-4cc8-9f23-a618afaa1b59/upload-1682805898293.webp", "BS1", null]
 		]
 	},
 	"Hydrake": {
@@ -234,11 +219,11 @@
 		"Spirit_Type": "A",
 		"App_Code": "sd05-001",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/d4913858-b793-4518-9a55-58ff210c5643/upload-1671754357410.webp", "SD05"],
-			["Alt", "https://cdn.cerealapis.com/post/4f4a2046-2b0c-4c9f-a98f-b4ff7a042f47/upload-1710355648648.png", "SS1"],
-			["Artist's", "https://cdn.cerealapis.com/post/0727d78f-2f6e-4456-a80b-05a28a75f67c/upload-1682805055947.webp", "AC1"],
-			["Celebration", "https://cdn.cerealapis.com/post/68c13b44-0b96-41c8-bd04-b35c0457309a/upload-1682805373721.webp", "PR1"],
-			["Stellar", "https://cdn.cerealapis.com/post/7eca2d91-7668-40e0-a3d5-6d402f93fd9b/upload-1682806251582.webp", "SD05"]
+			["Base", "https://cdn.cerealapis.com/post/d4913858-b793-4518-9a55-58ff210c5643/upload-1671754357410.webp", "SD05", "sd05-001"],
+			["Alt", "https://cdn.cerealapis.com/post/4f4a2046-2b0c-4c9f-a98f-b4ff7a042f47/upload-1710355648648.png", "SS1", "4tdeb4h2"],
+			["Artist's", "https://cdn.cerealapis.com/post/0727d78f-2f6e-4456-a80b-05a28a75f67c/upload-1682805055947.webp", "AC1", null],
+			["Celebration", "https://cdn.cerealapis.com/post/68c13b44-0b96-41c8-bd04-b35c0457309a/upload-1682805373721.webp", "PR1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/7eca2d91-7668-40e0-a3d5-6d402f93fd9b/upload-1682806251582.webp", "SD05", null]
 		]
 	},
 	"Twindra": {
@@ -250,7 +235,22 @@
 		"Spirit_Type": "A",
 		"App_Code": "sd05-002",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/954d1d59-2325-4102-9073-52ad5f387d74/upload-1671754381824.webp", "SD05"]
+			["Base", "https://cdn.cerealapis.com/post/954d1d59-2325-4102-9073-52ad5f387d74/upload-1671754381824.webp", "SD05", "sd05-002"]
+		]
+	},
+	"Penterror": {
+		"Cost": ["A", "A", "A"],
+		"Type": "Elestral",
+		"Effect": "When this Penterror is destroyed by an opponent’s card effect you can Special Cast any number of Hydrake and Twindra from your hand or deck in Attack Position.",
+		"Stats": [15, 8],
+		"Subclasses": ["Dragon", "Eldritch"],
+		"Spirit_Type": "A",
+		"App_Code": "sd05-003",
+		"Arts": [
+			["Full Art", "https://cdn.cerealapis.com/post/fe28e581-8b4d-4afa-8a2f-d80c0481071e/upload-1682804184089.webp", "BS1", null],
+			["Base", "https://cdn.cerealapis.com/post/d449a3d5-cb98-4732-adde-d340c53810e6/upload-1682806159784.webp", "SD05", "sd05-003"],
+			["Stained Glass Full Art", "https://cdn.cerealapis.com/post/5e3c9571-9f8d-45d9-bf21-ea9efd7a93f4/upload-1710357718072.png", "SS1", "azi9miuw"],
+			["Stellar Full Art", "https://cdn.cerealapis.com/post/d6f60aa9-4747-45fe-b0b5-fc9a7be16354/upload-1682806414982.webp", "BS1", null]
 		]
 	},
 	"Sproutyr": {
@@ -262,9 +262,9 @@
 		"Spirit_Type": "E",
 		"App_Code": "sd01-001",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/a543898e-55f6-42e2-bec6-949097e41641/upload-1671750087147.webp", "SD01"],
-			["Artist's", "https://cdn.cerealapis.com/post/5876a62c-a1c8-46bd-9426-d357d9d6389e/upload-1682804875111.webp", "AC1"],
-			["Stellar", "https://cdn.cerealapis.com/post/f6169f09-b3f8-4f7b-a438-21fd5c653574/upload-1682806490913.webp", "SD01"]
+			["Base", "https://cdn.cerealapis.com/post/a543898e-55f6-42e2-bec6-949097e41641/upload-1671750087147.webp", "SD01", "sd01-001"],
+			["Artist's", "https://cdn.cerealapis.com/post/5876a62c-a1c8-46bd-9426-d357d9d6389e/upload-1682804875111.webp", "AC1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/f6169f09-b3f8-4f7b-a438-21fd5c653574/upload-1682806490913.webp", "SD01", null]
 		]
 	},
 	"Satymber": {
@@ -276,7 +276,7 @@
 		"Spirit_Type": "E",
 		"App_Code": "sd01-002",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/a75cab66-4e58-4b8c-a965-2bf327182c32/upload-1671750123590.webp", "SD01"]
+			["Base", "https://cdn.cerealapis.com/post/a75cab66-4e58-4b8c-a965-2bf327182c32/upload-1671750123590.webp", "SD01", "sd01-002"]
 		]
 	},
 	"Centaurbor": {
@@ -288,8 +288,447 @@
 		"Spirit_Type": "E",
 		"App_Code": "sd01-003",
 		"Arts": [
-			["Base", "https://cdn.cerealapis.com/post/e2c05d01-0140-4e25-9f27-ebc9d822aee1/upload-1682806109961.webp", "SD01"],
-			["Full Art", "https://cdn.cerealapis.com/post/0fbbdb3c-f964-40af-a7d9-ea442560a2a1/upload-1682805806736.webp", "BS1"]
+			["Base", "https://cdn.cerealapis.com/post/e2c05d01-0140-4e25-9f27-ebc9d822aee1/upload-1682806109961.webp", "SD01", "sd01-003"],
+			["Full Art", "https://cdn.cerealapis.com/post/0fbbdb3c-f964-40af-a7d9-ea442560a2a1/upload-1682805806736.webp", "BS1", null]
+		]
+	},
+	"Elechik": {
+		"Cost": ["T"],
+		"Type": "Elestral",
+		"Effect": "When you Normal Cast this Elechik you can Search your deck for a Divine Rune and add it to your hand.",
+		"Stats": [4, 1],
+		"Subclasses": ["Avian"],
+		"Spirit_Type": "T",
+		"App_Code": "6e968sr1",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/7f236f03-18c8-46d4-a46d-84eea0afd9bf/upload-1671727354351.webp", "BS1", "6e968sr1"]
+		]
+	},
+	"Griffuse": {
+		"Cost": ["T", "A"],
+		"Type": "Elestral",
+		"Effect": "You can Nexus T or A from a Divine Rune. When you do, you can Special Ascend this Griffuse to Voltempest from your hand or deck.",
+		"Stats": [5, 3],
+		"Subclasses": ["Avian", "Brute"],
+		"Spirit_Type": "TA",
+		"App_Code": "36qt6sjy",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/034155e4-9221-42b7-b72d-ef0e99e18693/upload-1671727368857.webp", "BS1", "36qt6sjy"]
+		]
+	},
+	"Voltempest": {
+		"Cost": ["T", "T", "A"],
+		"Type": "Elestral",
+		"Effect": "You can Disenchant T or A from this Voltempest to force an opponent to Expend XXX. As long as Zeus is Enchanted this Voltempest cannot be targeted by an opponent’s card effect.",
+		"Stats": [13, 10],
+		"Subclasses": ["Avian", " Behemoth"],
+		"Spirit_Type": "TA",
+		"App_Code": "4a9446da",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/45988de6-3640-49bf-a992-b2191ddd3217/upload-1682805514106.webp", "BS1", "4a9446da"],
+			["Full Art Promo", "https://cdn.cerealapis.com/post/77492051-114d-4a2c-8185-2307113809b4/upload-1709925535114.png", "PR1", null],
+			["Stained Glass Full Art", "https://cdn.cerealapis.com/post/9657af4c-f63b-4bcc-a792-ee93238b4cbd/upload-1682804808142.webp", "SS1", "nw7b2vhl"]
+		]
+	},
+	"Nimbug": {
+		"Cost": ["A"],
+		"Type": "Elestral",
+		"Effect": "You can Expend A in order to Special Ascend this Nimbug to Cirrucoon from your hand or deck.",
+		"Stats": [1, 1],
+		"Subclasses": ["Insectoid"],
+		"Spirit_Type": "A",
+		"App_Code": "q10i58m6",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/aafa6d12-fb9f-4f70-878a-3cd61ecd5195/upload-1682806398457.webp", "BS1", "q10i58m6"],
+			["Stellar", "https://cdn.cerealapis.com/post/bc3f7e3f-8f12-4ecb-8d19-02e7d4c0b10b/upload-1671727583504.webp", "BS1", null]
+		]
+	},
+	"Cirrucoon": {
+		"Cost": ["A", "A"],
+		"Type": "Elestral",
+		"Effect": "During your Draw Phase you can Expend A in order to Special Ascend this Cirrucoon to Stratomoth from your hand or deck.",
+		"Stats": [1, 6],
+		"Subclasses": ["Insectoid"],
+		"Spirit_Type": "A",
+		"App_Code": "r3lpwa59",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/8885a6ba-66dc-4e0f-acdf-4e716f26bf4e/upload-1671727596829.webp", "BS1", "r3lpwa59"]
+		]
+	},
+	"Stratomoth": {
+		"Cost": ["A", "A", "A"],
+		"Type": "Elestral",
+		"Effect": "This Stratomoth gets +1 J for each Nimbug and Cirrucoon on your field and in your Underworld. You can Expend A in order to return each of your opponents' Runes to their hand.",
+		"Stats": [9, 5],
+		"Subclasses": ["Insectoid"],
+		"Spirit_Type": "A",
+		"App_Code": "mja46i73",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/ad678f33-2a4e-4416-99fb-804ddc0f3852/upload-1682805551886.webp", "BS1", "mja46i73"],
+			["Full Art", "https://cdn.cerealapis.com/post/1ff96079-8566-4054-9689-285f5068e55d/upload-1682805931717.webp", "BS1", null],
+			["Full Art Stellar", "https://cdn.cerealapis.com/post/701531b7-9b95-4f13-b4e5-e0eac7dc5846/upload-1710358424279.png", "SS1", "pnr5zd11"],
+			["Stained Glass Full Art", "https://cdn.cerealapis.com/post/8eff96e5-587e-4d25-9310-4252f8feed5e/upload-1709917113812.png", "SS1", null]
+		]
+	},
+	"Drataya": {
+		"Cost": ["E"],
+		"Type": "Elestral",
+		"Effect": "When a player Casts Ambrosia you can draw 2 cards.",
+		"Stats": [2, 4],
+		"Subclasses": ["Dryad", "Dragon"],
+		"Spirit_Type": "E",
+		"App_Code": "vfvdjt77",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/3a1baee1-79c1-4ba7-8445-5337ae126d60/upload-1671726349591.webp", "BS1", "vfvdjt77"],
+			["Stellar", "https://cdn.cerealapis.com/post/00db0bde-8490-4131-bcae-90711df443a5/upload-1682804996498.webp", "PR1", null]
+		]
+	},
+	"Ladogon": {
+		"Cost": ["E", "E"],
+		"Type": "Elestral",
+		"Effect": "When a player Casts Ambrosia or Golden Apple of Discord you can target and destroy a card.",
+		"Stats": [7, 8],
+		"Subclasses": ["Dryad", "Dragon"],
+		"Spirit_Type": "E",
+		"App_Code": "636izxj7",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/7f70a079-53a7-4b00-91da-1be154eb5b51/upload-1671726369245.webp", "BS1", "636izxj7"],
+			["Artist's", "https://cdn.cerealapis.com/post/d4f783a2-98bb-42cb-b345-3efd3457cae9/upload-1682804200409.webp", "AC1", null]
+		]
+	},
+	"Rummagem": {
+		"Cost": ["E"],
+		"Type": "Elestral",
+		"Effect": "When you Normal Cast this Rummagem you can Search your deck for an Elestral with Enchantment Cost E and add it to your hand.",
+		"Stats": [2, 3],
+		"Subclasses": ["Golem", "Brute"],
+		"Spirit_Type": "E",
+		"App_Code": "gyfkt348",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/68f85b12-e2a2-4b8d-9bbf-d90726af578f/upload-1671726393616.webp", "BS1", "gyfkt348"],
+			["Stellar", "https://cdn.cerealapis.com/post/97cc7e38-222c-4c25-817b-42741d0bdaaf/upload-1682805236765.webp", "PR1", null]
+		]
+	},
+	"Scavagem": {	
+		"Cost": ["E", "E"],
+		"Type": "Elestral",
+		"Effect": "When you Ascend into this Scavagem you can Expend E in order to Search your deck for up to 2 cards with Enchantment Cost E or EE and add them to your hand.",
+		"Stats": [4, 6],
+		"Subclasses": ["Golem", "Behemoth"],
+		"Spirit_Type": "E",
+		"App_Code": "jv9l06no",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/0262996a-b219-43f4-a648-5fb4324b79a2/upload-1671726413357.webp", "BS1", "jv9l06no"],
+			["Artist's", "https://cdn.cerealapis.com/post/a35b23ed-cb13-42ff-8902-fe6f064b1d61/upload-1682805163099.webp", "AC1", null]
+		]
+	},
+	"Spinymph": {
+		"Cost": ["E"],
+		"Type": "Elestral",
+		"Effect": "When this Spinymph is destroyed in battle you can Cast it as an Artifact Empowering the Elestral that destroyed it with the effect \"The Empowered Elestral has 0 base J.\"",
+		"Stats": [1, 5],
+		"Subclasses": ["Insectoid"],
+		"Spirit_Type": "E",
+		"App_Code": "i0vn903a",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/6a1c68e9-64ef-4164-8f8e-c3adf1ea347a/upload-1671726443165.webp", "BS1", "i0vn903a"]
+		]
+	},
+	"Spinosect": {
+		"Cost": ["E", "A"],
+		"Type": "Elestral",
+		"Effect": "This Spinosect can attack in Defense Position. If it does, use its O for calculations.",
+		"Stats": [1, 9],
+		"Subclasses": ["Insectoid", "Eldritch"],
+		"Spirit_Type": "EA",
+		"App_Code": "h1fgv973",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/d17dd516-d632-4fe3-a8ae-1a4c82de8ce8/upload-1671750214576.webp", "SD01", "h1fgv973"],
+			["Holo", "https://cdn.cerealapis.com/post/9226f052-dc0e-4969-b12a-f64cee79fbd0/upload-1682804615222.webp", "BS1", null]
+		]
+	},
+	"Clovie": {
+		"Cost": ["E"],
+		"Type": "Elestral",
+		"Effect": "When this Clovie receives 1 or more E you can draw a card.",
+		"Stats": [1, 4],
+		"Subclasses": ["Archaic", "Dryad"],
+		"Spirit_Type": "E",
+		"App_Code": "f4i6wzt4",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/f3878bec-65ed-4b3c-b381-d5ddfc568270/upload-1671726484894.webp", "BS1", "f4i6wzt4"]
+		]
+	},
+	"Sakurasaur": {
+		"Cost": ["E", "E"],
+		"Type": "Elestral",
+		"Effect": "You can Expend E in order to draw 2 cards.",
+		"Stats": [6, 8],
+		"Subclasses": ["Archaic", "Dryad"],
+		"Spirit_Type": "E",
+		"App_Code": "jaka3f5t",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/5ff25274-c44c-4fdc-aa9c-c4eb130b8f79/upload-1671726501135.webp", "BS1", "jaka3f5t"],
+			["Artist's", "https://cdn.cerealapis.com/post/3faf7b0d-0da5-4717-974e-aa7b7b945a8e/upload-1682805098728.webp", "AC1", null]
+		]
+	},
+	"Tectaurus": {
+		"Cost": ["E"],
+		"Type": "Elestral",
+		"Effect": "This Tectaurus gets +1 J for each Enchanting E on the field.",
+		"Stats": [3, 2],
+		"Subclasses": ["Golem", "Behemoth"],
+		"Spirit_Type": "E",
+		"App_Code": "3kmulz3t",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/d95024b3-979c-4360-b987-13b286dd1bdf/upload-1671726550312.webp", "BS1", "3kmulz3t"],
+			["Artist's", "https://cdn.cerealapis.com/post/c1e8bba2-85e9-46cc-b82d-5820efc92045/upload-1682805199292.webp", "AC1", null]
+		]
+	},
+	"Barabog": {
+		"Cost": ["E", "W"],
+		"Type": "Elestral",
+		"Effect": "When an opponent Casts an Elestral or Rune without E or W they must Expend X.",
+		"Stats": [3, 7],
+		"Subclasses": ["Aquatic", "Dryad"],
+		"Spirit_Type": "EW",
+		"App_Code": "9eoxo8jc",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/8f31cf3f-245c-4100-8792-ef03b909039a/upload-1671726565890.webp", "BS1", "9eoxo8jc"]
+		]
+	},
+	"Titanostalk": {
+		"Cost": ["E"],
+		"Type": "Elestral",
+		"Effect": "You can Expend E in order to force an opponent to reveal their hand until the End Phase.",
+		"Stats": [1, 4],
+		"Subclasses": ["Archaic", "Dryad"],
+		"Spirit_Type": "E",
+		"App_Code": "8mznkaiz",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/c774f2fe-a773-4f0d-9c02-10c36cc39363/upload-1671726581136.webp", "BS1", "8mznkaiz"]
+		]
+	},
+	"Equilynx": {
+		"Cost": ["E"],
+		"Type": "Elestral",
+		"Effect": "You can Nexus up to EE. When you do, you can target and destroy a Rune.",
+		"Stats": [4, 3],
+		"Subclasses": ["Dryad"],
+		"Spirit_Type": "E",
+		"App_Code": "n619m1q4",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/9eb95791-4a98-459c-8235-c9bcedb2d9db/upload-1671726597278.webp", "BS1", "n619m1q4"],
+			["Artist's", "https://cdn.cerealapis.com/post/43898cf3-2c02-4d53-8035-fa326bcae418/upload-1682804221998.webp", "AC1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/a0af5058-ca4a-43ab-b8a2-2871f085ce94/upload-1690630481475.webp", "BS1", null]
+		]
+	},
+	"Vysceris": {
+		"Cost": ["E"],
+		"Type": "Elestral",
+		"Effect": "This Vysceris gains +1 J for each Vysceris on the field. When this Vysceris destroys an Elestral in battle you can Special Cast a Vysceris from your hand or deck in Defense Position.",
+		"Stats": [4, 2],
+		"Subclasses": ["Insectoid"],
+		"Spirit_Type": "E",
+		"App_Code": "97kio7zw",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/581d992a-0c5b-4b06-9108-a2be2106efaf/upload-1682804954486.webp", "BS1", "97kio7zw"],
+			["Promo Full Art", "https://cdn.cerealapis.com/post/dda6de64-645f-413d-8a46-d7bb86820f80/upload-1682804539418.webp", "PR1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/7e316a1a-e56d-4ea8-bf58-8b4e343b8745/upload-1682806529642.webp", "BS1", null]
+		]
+	},
+	"Pandicine": {
+		"Cost": ["E"],
+		"Type": "Elestral",
+		"Effect": "You can Disenchant E from this Pandicine in order to return an Invoke Rune from your Underworld to your hand.",
+		"Stats": [1, 4],
+		"Subclasses": ["Brute"],
+		"Spirit_Type": "E",
+		"App_Code": "g7rj4165",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/b60c7060-8987-42eb-b47a-77597bcc6b04/upload-1682805011533.webp", "BS1", "g7rj4165"],
+			["Celebration Promo", "https://cdn.cerealapis.com/post/770c14f1-7dcb-489f-a2fc-42fb35f6e306/upload-1670448432436.webp", "PR1", null],
+			["Promo Full Art", "https://cdn.cerealapis.com/post/3bd769ef-6bd1-42b2-9b3d-c088772118b4/upload-1682804561338.webp", "PR1", null],
+			["Promo Stellar", "https://cdn.cerealapis.com/post/7befc528-7bc7-46dc-98af-ee1c52965f3f/upload-1682804444393.webp", "PR1", null]
+		]
+	},
+	"Urscout": {
+		"Cost": ["F"],
+		"Type": "Elestral",
+		"Effect": "When this Urscout is destroyed in battle can Special Cast an [URSA] that costs 1 Spirit from your hand or deck.",
+		"Stats": [1, 3],
+		"Subclasses": ["Ursa"],
+		"Spirit_Type": "F",
+		"App_Code": "9la2jo4z",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/5f32cc69-705b-43d3-9000-b18a248c1a46/upload-1674241912490.webp", "BS1", "9la2jo4z"],
+			["Promo Stellar", "https://cdn.cerealapis.com/post/295c85cd-f5bc-49ac-9cb8-4a0022c36c2b/upload-1685717315188.webp", "PR1", null]
+		]
+	},
+	"Ursmog": {
+		"Cost": ["F"],
+		"Type": "Elestral",
+		"Effect": "You can Expend F in order to Special Cast an [URSA] Elestral that costs 1 Spirit from your hand.",
+		"Stats": [2, 3],
+		"Subclasses": ["Ursa"],
+		"Spirit_Type": "F",
+		"App_Code": "70201axx",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/40b2179f-9cb5-4a33-8cc5-75b9ed2e9b88/upload-1674241955963.webp", "BS1", "9la2jo4z"],
+			["Promo Stellar", "https://cdn.cerealapis.com/post/f854dd28-d05f-4060-bb3c-b7cd0945b676/upload-1685717334635.webp", "PR1", null]
+		]
+	},
+	"Ursear": {
+		"Cost": ["F"],
+		"Type": "Elestral",
+		"Effect": "When this Ursear destroys an Elestral in battle you can Special Cast an [URSA] Elestral that costs 1 Spirit from your hand or deck.",
+		"Stats": [3, 1],
+		"Subclasses": ["Ursa"],
+		"Spirit_Type": "F",
+		"App_Code": "52qh3s91",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/177604d9-3b1f-43a9-bf1d-f640bf199f5d/upload-1674241997960.webp", "BS1", "52qh3s91"],
+			["Promo Stellar", "https://cdn.cerealapis.com/post/54d63c86-3658-48a1-9e4f-d05f4564ff74/upload-1685717353401.webp", "PR1", null]
+		]
+	},
+	"Majursa": {
+		"Cost": ["F", "F", "F"],
+		"Type": "Elestral",
+		"Effect": "This Majursa gets +2 J for each other [URSA] Elestral on your field. Your [URSA] Elestrals that cost 1 Spirit cannot be attacked and cannot be targeted by an opponent’s card effect.",
+		"Stats": [12, 12],
+		"Subclasses": ["Ursa"],
+		"Spirit_Type": "F",
+		"App_Code": "8pd3v09v",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/15a53289-8eb4-44bc-9758-6fb179a2e5ba/upload-1674242034049.webp", "BS1", "8pd3v09v"],
+			["Promo Full Art", "https://cdn.cerealapis.com/post/2de88158-7119-4306-a5ab-116c838d2ab7/upload-1685717391189.webp", "PR1", null]
+		]
+	},
+	"Ignectar": {
+		"Cost": ["F"],
+		"Type": "Elestral",
+		"Effect": "When you Normal Cast this Ignectar you can Special Cast up to 2 Ignectar from your hand or deck in Attack Position with F. If you do you must skip your next Battle Phase.",
+		"Stats": [1, 2],
+		"Subclasses": ["Insectoid"],
+		"Spirit_Type": "F",
+		"App_Code": "ic460b70",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/e7d4e603-6ea0-4743-a230-3d372d8bf4d3/upload-1671726809620.webp", "BS1", "ic460b70"],
+			["Promo Stellar", "https://cdn.cerealapis.com/post/f52eabe2-c2c3-44f4-a698-d7f6087d9064/upload-1682805288570.webp", "PR1", null]
+		]
+	},
+	"Waspyre": {
+		"Cost": ["F", "F"],
+		"Type": "Elestral",
+		"Effect": "You can Disenchant F from an Ignectar or Waspyre to force an opponent to Expend XX. This Waspyre's effect can be activated any number of times on your turn.",
+		"Stats": [5, 1],
+		"Subclasses": ["Insectoid", "Eldritch"],
+		"Spirit_Type": "F",
+		"App_Code": "jmasjzti",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/7e9a9c19-6bcc-4da1-a5ef-b3014519b534/upload-1671726840922.webp", "BS1", "jmasjzti"]
+		]
+	},
+	"Warmite": {
+		"Cost": ["F"],
+		"Type": "Elestral",
+		"Effect": "You can target an opponent’s Elestral and give it -4 J until the End Phase.",
+		"Stats": [3, 1],
+		"Subclasses": ["Insectoid"],
+		"Spirit_Type": "F",
+		"App_Code": "49mi90ks",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/07333a7f-6394-4859-ad0d-3e3ae750ba85/upload-1671726853278.webp", "BS1", "49mi90ks"],
+			["Promo Stellar", "https://cdn.cerealapis.com/post/266da375-9722-459e-95a0-0e4a119c34df/upload-1682804761720.webp", "PR1", null]
+		]
+	},
+	"Flarachne": {
+		"Cost": ["F", "F"],
+		"Type": "Elestral",
+		"Effect": "As long as this Flarachne is Enchanted Elestrals cannot attack the turn they are Cast unless they are F-Enchanted.",
+		"Stats": [4, 8],
+		"Subclasses": ["Insectoid"],
+		"Spirit_Type": "F",
+		"App_Code": "495nmyeo",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/dd9dd752-98f2-4d8b-89c5-2f8a6d2d9094/upload-1671726866519.webp", "BS1", "495nmyeo"]
+		]
+	},
+	"Kindleo": {
+		"Cost": ["F"],
+		"Type": "Elestral",
+		"Effect": "You can Nexus up to FF. When you do, you can target and destroy an opponent’s Elestral.",
+		"Stats": [3, 1],
+		"Subclasses": ["Brute", "Ethereal"],
+		"Spirit_Type": "F",
+		"App_Code": "jj6gly54",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/8390ab84-9b5d-4081-9b76-56a9329b7f6d/upload-1671726880017.webp", "BS1", "jj6gly54"],
+			["Promo Stellar", "https://cdn.cerealapis.com/post/4b040958-ce65-4555-b1f9-924a30c7bc0f/upload-1682805184335.webp", "PR1", null]
+		]
+	},
+	"Leonite": {
+		"Cost": ["F", "F"],
+		"Type": "Elestral",
+		"Effect": "As long as this Leonite is in Attack Position players cannot Cast Invoke Runes.",
+		"Stats": [7, 2],
+		"Subclasses": ["Behemoth", "Ethereal"],
+		"Spirit_Type": "F",
+		"App_Code": "7izv26d9",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/776bfb62-a83e-45c8-b8eb-4c8be4b04e28/upload-1682805396000.webp", "BS1", "7izv26d9"],
+			["Full Art", "https://cdn.cerealapis.com/post/5e39c8a9-c879-4edd-b3be-077817c268a5/upload-1682805842542.webp", "BS1", null]
+		]
+	},
+	"Sinder": {
+		"Cost": ["F"],
+		"Type": "Elestral",
+		"Effect": "When this Sinder receives 1 or more F your opponents must send the top 3 cards from their deck to their Underworld.",
+		"Stats": [3, 2],
+		"Subclasses": ["Eldritch"],
+		"Spirit_Type": "F",
+		"App_Code": "85xafxn7",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/791469ac-00ad-4819-90ac-e87cca8e63a3/upload-1671726907575.webp", "BS1", "85xafxn7"],
+			["Artist's", "https://cdn.cerealapis.com/post/1f073900-9715-4146-bbe6-4f544d29b3b4/upload-1682804375385.webp", "AC1", null]
+		]
+	},
+	"Emphyrix": {
+		"Cost": ["F"],
+		"Type": "Elestral",
+		"Effect": "When this Emphyrix is destroyed in battle or by an opponent's card effect you can Expend F. If you do, during this turn's End Phase you can Special Cast it.",
+		"Stats": [3, 3],
+		"Subclasses": ["Avian", "Ethereal"],
+		"Spirit_Type": "F",
+		"App_Code": "1kzp967y",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/7c585927-1e12-4eb3-9c5b-20df65bd7ab8/upload-1682805431418.webp", "BS1", "1kzp967y"],
+			["Full Art", "https://cdn.cerealapis.com/post/008f1912-98c3-4ee7-b034-89a9c6a13324/upload-1682805860241.webp", "BS1", null],
+			["Stellar", "https://cdn.cerealapis.com/post/23c4cb45-ab86-4f3c-9cc0-bb32b8d9c6b4/upload-1682806234756.webp", "BS1", null]
+		]
+	},
+	"Volcaries": {
+		"Cost": ["F"],
+		"Type": "Elestral",
+		"Effect": "This Volcaries gets +1 J for each Enchanting F on the field.",
+		"Stats": [3, 2],
+		"Subclasses": ["Ethereal", "Brute"],
+		"Spirit_Type": "F",
+		"App_Code": "ueqy7wc8",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/edf61c09-7027-45ea-8f10-736c060c30be/upload-1671726947829.webp", "BS1", "ueqy7wc8"]
+		]
+	},
+	"Card_Name": {
+		"Cost": [],
+		"Type": "Template",
+		"Effect": "",
+		"Stats": [0, 0],
+		"Subclasses": [],
+		"Spirit_Type": "",
+		"App_Code": "",
+		"Arts": [
+			["Rarity", "Link", "Set", "App_Code"]
 		]
 	}
 }

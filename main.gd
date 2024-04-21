@@ -43,6 +43,7 @@ func _ready():
 	$"Deck Builder".visible = true
 	$"Esc Button".visible = true
 	$"Title Bg".set_loading_max(art_amount)
+	$"Title Bg".set_loading_text("Loading Cards")
 	await $Catalog.load_cards(cards)
 	$"Title Bg".fade_out()
 

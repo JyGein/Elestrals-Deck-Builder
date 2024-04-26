@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bnv54n5757w70"]
 
 [ext_resource type="Script" path="res://main menu assets/Title Bg.gd" id="1_ugdeb"]
-[ext_resource type="Texture2D" uid="uid://dcv7hihx62iu1" path="res://main menu assets/Loading bar outline.svg" id="2_ri2q7"]
+[ext_resource type="Texture2D" uid="uid://dcv7hihx62iu1" path="res://deck builder assets/main menu assets/Loading bar outline.svg" id="2_ri2q7"]
 [ext_resource type="FontFile" uid="uid://bjpaecf5oevg1" path="res://fonts/Alegreya-Bold.ttf" id="2_wyhqy"]
 [ext_resource type="FontFile" uid="uid://c8n11flq2dsj7" path="res://fonts/Alegreya-SemiBold.ttf" id="4_xf5h6"]
 

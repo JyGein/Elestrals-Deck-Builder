@@ -42,7 +42,6 @@ offset_bottom = 648.0
 color = Color(0, 0, 0, 0.513726)
 
 [node name="Title Bg" parent="." instance=ExtResource("4_qhge2")]
-visible = false
 
 [node name="Esc Menu" parent="." instance=ExtResource("7_gfx31")]
 visible = false

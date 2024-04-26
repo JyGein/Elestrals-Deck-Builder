@@ -41,9 +41,9 @@ func _on_image_export_pressed():
 	var card_images: Array[Image]
 	for card_node in deck_data:
 		card_images.append(card_node.texture.get_image())
-		card_images[-1].convert(5)
+		card_images[-1].convert(Image.FORMAT_RGBA8)
 	var card_bg: Image = load("res://card export bg.svg").get_image()
-	card_bg.convert(5)
+	card_bg.convert(Image.FORMAT_RGBA8)
 	for i in range(len(card_images)):
 		card_images[i].resize(825, 1125)
 		@warning_ignore("integer_division")

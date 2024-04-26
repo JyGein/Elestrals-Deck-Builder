@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0d8vhchiqqab"
-path="res://.godot/imported/hamburger button pressed.svg-606a86563d4c6622a7e242e9208a3501.ctex"
+uid="uid://d2an0pw20o6hg"
+path="res://.godot/imported/Esc Menu.svg-6e955fac54f798f5e1c3158797cbdd11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://hamburger button pressed.svg"
-dest_files=["res://.godot/imported/hamburger button pressed.svg-606a86563d4c6622a7e242e9208a3501.ctex"]
+source_file="res://esc menu assets/Esc Menu.svg"
+dest_files=["res://.godot/imported/Esc Menu.svg-6e955fac54f798f5e1c3158797cbdd11.ctex"]
 
 [params]
 

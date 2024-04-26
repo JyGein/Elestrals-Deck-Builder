@@ -55,7 +55,7 @@ func load_cards(card_data):
 var last_drag_time: int = 0
 var last_Lclick_time: int = 0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if !is_loading && Time.get_ticks_msec() > (last_drag_time+100):
 		if position.y > 0:
 			position.y -= (position.y+10)*(1.0/10.0)

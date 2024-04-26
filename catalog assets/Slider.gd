@@ -13,7 +13,7 @@ func _on_slider_button_control_gui_input(event):
 			$"Slider Button".position.y += event.relative.y
 			last_sliding_time = Time.get_ticks_msec()
 
-func _process(delta):
+func _process(_delta):
 	if Time.get_ticks_msec() > (last_sliding_time+100):
 		set_slider_pos((-$"../Manual Drag Button/Cards Parent".position.y)/$"../Manual Drag Button/Cards Parent".CATALOG_HEIGHT)
 	if $"Slider Button".position.y < 0:

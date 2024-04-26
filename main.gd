@@ -2,8 +2,10 @@ extends Node2D
 
 signal image_installed
 var card_file: FileAccess
+var notification_text: Resource
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	notification_text = preload("res://general assets/notification_text.tscn")
 	var http_request = HTTPRequest.new()
 	add_child(http_request)
 	http_request.request_completed.connect(self._http_request_completed)
@@ -22,6 +24,16 @@ func _ready():
 			continue
 		for Art in card_data["Arts"]:
 			art_amount += 1
+	dir.list_dir_begin()
+	var file_name = dir.get_next()
+	while file_name != "":
+		if !dir.current_is_dir():
+			var file: FileAccess = FileAccess.open("user://Cards/{0}".format([file_name]), FileAccess.READ)
+			var file_size: int = file.get_length()
+			file.close()
+			if file_size == 0:
+				dir.remove(file_name)
+		file_name = dir.get_next()
 	var downloaded_amount = dir.get_files().size()
 	if art_amount != downloaded_amount:
 		$"Title Bg".set_loading_max(art_amount - downloaded_amount)
@@ -49,17 +61,20 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass 
+
 
 func _on_deck_builder_spawned_card(card):
 	card.card_inspected.connect(_on_base_card_card_inspected)
 	card.card_selected.connect(_on_deck_card_selected)
 
+
 func _on_catalog_catalog_cards_updated(cards):
 	for card_node in cards:
 		card_node.card_inspected.connect(_on_base_card_card_inspected)
 		card_node.card_selected.connect(_on_catalog_card_selected)
+
 
 func _on_base_card_card_inspected(image):
 	var instancedCard = preload("res://base_card.tscn")
@@ -77,10 +92,12 @@ func _on_base_card_card_inspected(image):
 	$"disable interactions".visible = false
 	card.queue_free()
 
-func _on_catalog_card_selected(card_name, card_data, card_node):
+
+func _on_catalog_card_selected(card_name, card_data, _card_node):
 	$"Deck Builder".add_card(card_name, card_data)
 
-func _on_deck_card_selected(card_name, card_data, card_node):
+
+func _on_deck_card_selected(_card_name, card_data, card_node):
 	card_node.queue_free()
 	$"Deck Builder".card_objects.erase(card_node)
 	if card_data["Type"] == "Spirit":
@@ -89,15 +106,31 @@ func _on_deck_card_selected(card_name, card_data, card_node):
 		$"Deck Builder".main_deck_amount -= 1
 	$"Deck Builder".sort()
 
-func _http_request_completed(result, response_code, headers, body):
+
+func _http_request_completed(result, response_code, _headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS:
 		push_error("Image couldn't be downloaded. Try a different image. Response Code: {0}".format([response_code]))
 	#var card_image = Image.new()
 	#var error = card_image.load_webp_from_buffer(body)
 	#print(error_string(error))
 	card_file.store_buffer(body)
-	card_file = null
+	card_file.close()
 	emit_signal("image_installed")
 
+
 func _on_esc_button_pressed():
-	pass # Replace with function body.
+	$"disable interactions".visible = true
+	$"Esc Menu".visible = true
+	await $"Esc Menu/Exit Button".pressed
+	$"disable interactions".visible = false
+	$"Esc Menu".visible = false
+
+
+func _on_esc_menu_need_deck_data():
+	$"Esc Menu".deck_data = $"Deck Builder".card_objects
+
+func display_notification(text: String, color: Color = Color.WHITE_SMOKE):
+	var notification_object: Button = notification_text.instantiate()
+	$"Notification Control".add_child(notification_object)
+	notification_object.text = text
+	notification_object.modulate = color

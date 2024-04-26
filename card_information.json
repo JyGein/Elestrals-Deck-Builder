@@ -719,6 +719,81 @@
 			["Base", "https://cdn.cerealapis.com/post/edf61c09-7027-45ea-8f10-736c060c30be/upload-1671726947829.webp", "BS1", "ueqy7wc8"]
 		]
 	},
+	"Krakkid": {
+		"Cost": ["W"],
+		"Type": "Elestral",
+		"Effect": "When you Cast this Krakkid you can target an opponent’s Elestral. That Elestral cannot attack and its effect is negated as long as this Krakkid is Enchanted.",
+		"Stats": [2, 2],
+		"Subclasses": ["Oceanic"],
+		"Spirit_Type": "W",
+		"App_Code": "e6310wtg",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/af5147e0-37ae-43a0-b9be-5cd4b6c480b1/upload-1671726961660.webp", "BS1", "e6310wtg"]
+		]
+	},
+	"Krakking": {
+		"Cost": ["W", "W"],
+		"Type": "Elestral",
+		"Effect": "When you Cast this Krakking you can target up to 2 unoccupied slots in an opponent’s Elestral Row. Those Elestral slots cannot be used as long as this Krakking is Enchanted.",
+		"Stats": [5, 8],
+		"Subclasses": ["Oceanic", "Eldritch"],
+		"Spirit_Type": "W",
+		"App_Code": "yvzp3m89",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/1502fefa-4410-4c67-a0ea-3fd9358a3f54/upload-1682805452903.webp", "BS1", "yvzp3m89"],
+			["Artist's", "https://cdn.cerealapis.com/post/ba602915-0f48-4558-b919-067d805f9531/upload-1682805218662.webp", "AC1", null],
+			["Promo Full Art", "https://cdn.cerealapis.com/post/0ee00d21-63da-4b6b-a9c4-805f9c9ecda5/upload-1682804856831.webp", "PR1", null]
+		]
+	},
+	"Foamee": {
+		"Cost": ["W"],
+		"Type": "Elestral",
+		"Effect": "When this Foamee is destroyed in battle you can Special Cast an Elestral with Enchantment Cost W from your deck in Defense Position.",
+		"Stats": [2, 3],
+		"Subclasses": ["Oceanic", "Ethereal"],
+		"Spirit_Type": "W",
+		"App_Code": "8x5ki9iz",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/fdcc691b-e5ce-4c6a-bca2-c6959e9693b5/upload-1671727053093.webp", "BS1", "8x5ki9iz"],
+			["Promo Stellar", "https://cdn.cerealapis.com/post/f8ccf921-b425-4394-97e7-18881cf40a01/upload-1682805080673.webp", "PR1", null]
+		]
+	},
+	"Capregal": {
+		"Cost": ["W", "W"],
+		"Type": "Elestral",
+		"Effect": "When this Capregal destroys an Elestral in battle you can Special Cast an Elestral with Enchantment Cost W from your Underworld in Defense Position.",
+		"Stats": [7, 4],
+		"Subclasses": ["Oceanic", "Ethereal"],
+		"Spirit_Type": "W",
+		"App_Code": "an4977cd",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/325524d1-bf9a-4da1-b5a4-02492ff3224e/upload-1671727066742.webp", "BS1", "an4977cd"]
+		]
+	},
+	"Typhlant": {
+		"Cost": ["W"],
+		"Type": "Elestral",
+		"Effect": "When you Cast this Typhlant you can discard a card from an opponent’s hand at random.",
+		"Stats": [2, 2],
+		"Subclasses": ["Aquatic", "Brute"],
+		"Spirit_Type": "W",
+		"App_Code": "u7s699d3",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/465996f6-f7bf-4581-9456-e3011d473bf7/upload-1671727081831.webp", "BS1", "u7s699d3"]
+		]
+	},
+	"Eyevory": {
+		"Cost": ["W", "W"],
+		"Type": "Elestral",
+		"Effect": "This Eyevory gets +2 J for every Typhlant in your Underworld. You can Expend W in order to Special Cast a Typhlant from your Underworld in Attack Position.",
+		"Stats": [6, 8],
+		"Subclasses": ["Aquatic", "Behemoth"],
+		"Spirit_Type": "W",
+		"App_Code": "la403kav",
+		"Arts": [
+			["Base", "https://cdn.cerealapis.com/post/90fc6eb2-9570-4107-bc38-5074b9767ea6/upload-1671727097755.webp", "BS1", "la403kav"]
+		]
+	},
 	"Card_Name": {
 		"Cost": [],
 		"Type": "Template",

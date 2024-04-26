@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://66s1nhfuh7de"]
+
+[ext_resource type="Texture2D" uid="uid://d2an0pw20o6hg" path="res://esc menu assets/Esc Menu.svg" id="1_7vkar"]
+[ext_resource type="Script" path="res://esc_menu.gd" id="1_n1exi"]
+[ext_resource type="Texture2D" uid="uid://cufvejot0l52" path="res://buttons/exit button.svg" id="2_epwwi"]
+[ext_resource type="PackedScene" uid="uid://d2uqxjp3oglei" path="res://general assets/menu_button.tscn" id="3_d5vmu"]
+[ext_resource type="Texture2D" uid="uid://6swyefgfj5uy" path="res://buttons/exit button pressed.svg" id="3_omcpj"]
+[ext_resource type="FontFile" uid="uid://b6rv3p48it7yc" path="res://fonts/Alegreya-SemiBoldItalic.ttf" id="4_vsvhu"]
+
+[node name="Esc Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+script = ExtResource("1_n1exi")
+
+[node name="BG" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_7vkar")
+
+[node name="App Code Export" parent="BG" instance=ExtResource("3_d5vmu")]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -167.0
+offset_right = 125.0
+offset_bottom = -107.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "App Code Export"
+
+[node name="Image Export" parent="BG" instance=ExtResource("3_d5vmu")]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -85.0
+offset_right = 125.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Image Export"
+
+[node name="App Code Import" parent="BG" instance=ExtResource("3_d5vmu")]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = 29.0
+offset_right = 125.0
+offset_bottom = 89.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "App Code Import"
+
+[node name="unimplemented disclaimer" type="Label" parent="BG/App Code Import"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 66.0
+offset_right = 104.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(0.611765, 0.611765, 0.611765, 1)
+theme_override_fonts/font = ExtResource("4_vsvhu")
+theme_override_font_sizes/font_size = 17
+text = "*Unimplemented"
+
+[node name="Exit Button" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 703.5
+offset_top = 106.5
+offset_right = 743.5
+offset_bottom = 146.5
+texture_normal = ExtResource("2_epwwi")
+texture_pressed = ExtResource("3_omcpj")
+
+[connection signal="pressed" from="BG/App Code Export" to="." method="_on_app_code_export_pressed"]
+[connection signal="pressed" from="BG/Image Export" to="." method="_on_image_export_pressed"]

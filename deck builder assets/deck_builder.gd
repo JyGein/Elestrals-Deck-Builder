@@ -108,7 +108,7 @@ func sort_cards(a, b):
 var last_drag_time: int = 0
 var last_Lclick_time: int = 0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if Time.get_ticks_msec() > (last_drag_time+100):
 		if $"Manual Drag Button/Cards Parent".position.y > 0:
 			$"Manual Drag Button/Cards Parent".position.y -= ($"Manual Drag Button/Cards Parent".position.y+10)*(1.0/10.0)

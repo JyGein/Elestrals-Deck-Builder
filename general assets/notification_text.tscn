@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyd37oc0jq7ea"]
+
+[ext_resource type="Texture2D" uid="uid://crsrsyq37587h" path="res://general assets/info icon.svg" id="1_bk3vr"]
+[ext_resource type="Script" path="res://Notification Text.gd" id="2_y5pyj"]
+
+[node name="Notification Text" type="Button"]
+offset_top = -32.0
+offset_right = 32.0
+icon = ExtResource("1_bk3vr")
+script = ExtResource("2_y5pyj")
+
+[connection signal="item_rect_changed" from="." to="." method="_on_item_rect_changed"]

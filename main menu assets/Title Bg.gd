@@ -10,7 +10,7 @@ func _ready():
 	#var image_type = regex.search(Art[1]).get_string(1)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass # Replace with function body.
 
 func fade_out():

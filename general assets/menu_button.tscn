@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2uqxjp3oglei"]
+
+[ext_resource type="Texture2D" uid="uid://d3g0tmimrilyp" path="res://buttons/basic button.svg" id="1_ta51e"]
+[ext_resource type="Script" path="res://Menu Button.gd" id="2_o2b6n"]
+[ext_resource type="FontFile" uid="uid://c8n11flq2dsj7" path="res://fonts/Alegreya-SemiBold.ttf" id="3_aq5yd"]
+
+[node name="Button" type="Button"]
+offset_right = 250.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_aq5yd")
+theme_override_font_sizes/font_size = 26
+text = "Button Text"
+flat = true
+script = ExtResource("2_o2b6n")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ta51e")
+
+[connection signal="button_down" from="." to="." method="_on_menu_button_button_down"]
+[connection signal="button_up" from="." to="." method="_on_menu_button_button_up"]

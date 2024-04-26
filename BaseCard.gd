@@ -9,7 +9,7 @@ func _ready():
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	check_moved_far()
 
 func select_art(Art_array: Array):
@@ -48,4 +48,5 @@ func check_moved_far():
 			moved_far = true
 
 func _on_texture_changed():
-	$Interaction.size = texture.get_size()
+	if texture:
+		$Interaction.size = texture.get_size()

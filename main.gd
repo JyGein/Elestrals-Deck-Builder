@@ -3,9 +3,11 @@ extends Node2D
 signal image_installed
 var card_file: FileAccess
 var notification_text: Resource
+var input_gui: Resource
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	notification_text = preload("res://general assets/notification_text.tscn")
+	input_gui = preload("res://general assets/base_input.tscn")
 	var http_request = HTTPRequest.new()
 	add_child(http_request)
 	http_request.request_completed.connect(self._http_request_completed)
@@ -129,8 +131,23 @@ func _on_esc_button_pressed():
 func _on_esc_menu_need_deck_data():
 	$"Esc Menu".deck_data = $"Deck Builder".card_objects
 
-func display_notification(text: String, color: Color = Color.WHITE_SMOKE):
+
+func display_notification(text: String, color: Color):
 	var notification_object: Button = notification_text.instantiate()
 	$"Notification Control".add_child(notification_object)
 	notification_object.text = text
 	notification_object.modulate = color
+
+
+func need_input(question: String, placeholder_text: String, self_node: Node):
+	var input_object: Control = input_gui.instantiate()
+	$"Input Control".add_child(input_object)
+	input_object.question = question
+	input_object.placeholder_text = placeholder_text
+	await input_object.got_input
+	self_node.input = input_object.output
+	input_object.queue_free()
+
+
+func _on_esc_menu_add_card(card_name, card_data):
+	$"Deck Builder".add_card(card_name, card_data)

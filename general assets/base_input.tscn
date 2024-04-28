@@ -1,0 +1,101 @@
+[gd_scene load_steps=9 format=3 uid="uid://dynmfxo5mn27f"]
+
+[ext_resource type="Script" path="res://general assets/base_input.gd" id="1_8pxx0"]
+[ext_resource type="Texture2D" uid="uid://ca5sr5tklwyac" path="res://general assets/Input Menu.svg" id="2_cqgoj"]
+[ext_resource type="FontFile" uid="uid://c8n11flq2dsj7" path="res://fonts/Alegreya-SemiBold.ttf" id="3_nt7jc"]
+[ext_resource type="Texture2D" uid="uid://2dc33ifjllvj" path="res://buttons/confirm button.svg" id="4_ykief"]
+[ext_resource type="Texture2D" uid="uid://evypihjo0nwp" path="res://buttons/confirm button pressed.svg" id="5_1b0da"]
+[ext_resource type="FontFile" uid="uid://bjpaecf5oevg1" path="res://fonts/Alegreya-Bold.ttf" id="6_f4g57"]
+[ext_resource type="Texture2D" uid="uid://cufvejot0l52" path="res://buttons/exit button.svg" id="7_armx4"]
+[ext_resource type="Texture2D" uid="uid://6swyefgfj5uy" path="res://buttons/exit button pressed.svg" id="8_rpfw5"]
+
+[node name="base input" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8pxx0")
+
+[node name="BG" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -150.0
+offset_right = 250.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cqgoj")
+
+[node name="Input" type="TextEdit" parent="BG"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -231.0
+offset_top = -81.0
+offset_right = 231.0
+offset_bottom = 119.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_nt7jc")
+placeholder_text = "gimmie wordies :3"
+wrap_mode = 1
+
+[node name="ConfirmButton" type="TextureButton" parent="BG"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -45.0
+offset_top = -25.0
+offset_right = 45.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("4_ykief")
+texture_pressed = ExtResource("5_1b0da")
+
+[node name="Question" type="Label" parent="BG"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -231.0
+offset_top = -131.0
+offset_right = 231.0
+offset_bottom = -95.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_f4g57")
+theme_override_font_sizes/font_size = 26
+text = "Help the box below me is torturing me"
+autowrap_mode = 2
+
+[node name="Exit Button" type="TextureButton" parent="BG"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -22.5
+offset_top = -17.5
+offset_right = 17.5
+offset_bottom = 22.5
+grow_horizontal = 0
+texture_normal = ExtResource("7_armx4")
+texture_pressed = ExtResource("8_rpfw5")
+
+[connection signal="pressed" from="BG/ConfirmButton" to="." method="_on_confirm_button_pressed"]
+[connection signal="pressed" from="BG/Exit Button" to="." method="_on_exit_button_pressed"]

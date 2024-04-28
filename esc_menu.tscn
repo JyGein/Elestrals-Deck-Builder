@@ -79,6 +79,7 @@ grow_vertical = 2
 text = "App Code Import"
 
 [node name="unimplemented disclaimer" type="Label" parent="BG/App Code Import"]
+visible = false
 layout_mode = 0
 offset_left = -1.0
 offset_top = 66.0
@@ -100,3 +101,4 @@ texture_pressed = ExtResource("3_omcpj")
 
 [connection signal="pressed" from="BG/App Code Export" to="." method="_on_app_code_export_pressed"]
 [connection signal="pressed" from="BG/Image Export" to="." method="_on_image_export_pressed"]
+[connection signal="pressed" from="BG/App Code Import" to="." method="_on_app_code_import_pressed"]

@@ -1,6 +1,7 @@
 extends Control
 
 signal Notification(text: String, color: Color)
+signal Add_Card(card_name: String, card_data: Dictionary)
 signal need_deck_data
 signal got_deck_data
 var deck_data: Array[Node]:
@@ -9,6 +10,14 @@ var deck_data: Array[Node]:
 	set(value):
 		deck_data = value
 		emit_signal("got_deck_data")
+signal need_input(question: String, placeholder_text: String, self_node: Node)
+signal got_input
+var input:
+	get:
+		return input
+	set(value):
+		input = value
+		emit_signal("got_input")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -54,3 +63,40 @@ func _on_image_export_pressed():
 		DirAccess.open("user://").make_dir("Deck Images")
 	card_bg.save_png(file_path)
 	emit_signal("Notification", "Image Saved to {0}".format([FileAccess.open(file_path, FileAccess.READ).get_path_absolute()]), Color.WHITE_SMOKE)
+
+
+func _on_app_code_import_pressed():
+	emit_signal("need_input", "Enter App Code:", "App Code goes here...", self)
+	await got_input
+	if input == null:
+		return
+	var app_code = JSON.parse_string(input)
+	if app_code == null:
+		emit_signal("Notification", "Invalid App Code", Color.RED)
+		return
+	if !app_code.has("title") or !app_code.has("deck") or !app_code.has("sideDeck"):
+		emit_signal("Notification", "Invalid App Code", Color.RED)
+		return
+	var regex = RegEx.new()
+	regex.compile(r"(.+):(\d\d?)")
+	var cards: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://card_information.json"))
+	var total_cards: int = 0
+	var cards_imported: int = 0
+	for card_code in app_code["deck"]:
+		var card_match: RegExMatch = regex.search(card_code)
+		if !card_match:
+			emit_signal("Notification", "Invalid App Code", Color.RED)
+			return
+		var card_id: String = card_match.get_string(1)
+		var card_amount: int = int(card_match.get_string(2))
+		total_cards += card_amount
+		for card in cards:
+			if cards[card]["App_Code"] == card_id:
+				cards_imported += card_amount
+				var card_data = cards[card]
+				card_data["Art"] = cards[card]["Arts"][0]
+				for i in range(card_amount):
+					emit_signal("Add_Card", card, card_data)
+				continue
+	if cards_imported != total_cards:
+		emit_signal("Notification", "Error importing all cards", Color.RED)

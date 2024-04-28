@@ -62,9 +62,26 @@ offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 0
 
+[node name="Input Control" type="Control" parent="."]
+z_index = 100
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 576.0
+offset_top = 324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [connection signal="catalog_cards_updated" from="Catalog" to="." method="_on_catalog_catalog_cards_updated"]
 [connection signal="loaded_card" from="Catalog" to="Title Bg" method="_on_catalog_loaded_card"]
 [connection signal="spawned_card" from="Deck Builder" to="." method="_on_deck_builder_spawned_card"]
 [connection signal="pressed" from="Esc Button" to="." method="_on_esc_button_pressed"]
+[connection signal="Add_Card" from="Esc Menu" to="." method="_on_esc_menu_add_card"]
 [connection signal="Notification" from="Esc Menu" to="." method="display_notification"]
 [connection signal="need_deck_data" from="Esc Menu" to="." method="_on_esc_menu_need_deck_data"]
+[connection signal="need_input" from="Esc Menu" to="." method="need_input"]

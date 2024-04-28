@@ -222,7 +222,7 @@
 			["Base", "https://cdn.cerealapis.com/post/d4913858-b793-4518-9a55-58ff210c5643/upload-1671754357410.webp", "SD05", "sd05-001"],
 			["Alt", "https://cdn.cerealapis.com/post/4f4a2046-2b0c-4c9f-a98f-b4ff7a042f47/upload-1710355648648.png", "SS1", "4tdeb4h2"],
 			["Artist's", "https://cdn.cerealapis.com/post/0727d78f-2f6e-4456-a80b-05a28a75f67c/upload-1682805055947.webp", "AC1", null],
-			["Celebration", "https://cdn.cerealapis.com/post/68c13b44-0b96-41c8-bd04-b35c0457309a/upload-1682805373721.webp", "PR1", null],
+			["Prototype Celebration Promo", "https://cdn.cerealapis.com/post/68c13b44-0b96-41c8-bd04-b35c0457309a/upload-1682805373721.webp", "PR1", null],
 			["Stellar", "https://cdn.cerealapis.com/post/7eca2d91-7668-40e0-a3d5-6d402f93fd9b/upload-1682806251582.webp", "SD05", null]
 		]
 	},
@@ -547,7 +547,7 @@
 		"App_Code": "g7rj4165",
 		"Arts": [
 			["Base", "https://cdn.cerealapis.com/post/b60c7060-8987-42eb-b47a-77597bcc6b04/upload-1682805011533.webp", "BS1", "g7rj4165"],
-			["Celebration Promo", "https://cdn.cerealapis.com/post/770c14f1-7dcb-489f-a2fc-42fb35f6e306/upload-1670448432436.webp", "PR1", null],
+			["Prototype Celebration Promo", "https://cdn.cerealapis.com/post/770c14f1-7dcb-489f-a2fc-42fb35f6e306/upload-1670448432436.webp", "", null],
 			["Promo Full Art", "https://cdn.cerealapis.com/post/3bd769ef-6bd1-42b2-9b3d-c088772118b4/upload-1682804561338.webp", "PR1", null],
 			["Promo Stellar", "https://cdn.cerealapis.com/post/7befc528-7bc7-46dc-98af-ee1c52965f3f/upload-1682804444393.webp", "PR1", null]
 		]

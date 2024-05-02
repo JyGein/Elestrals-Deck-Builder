@@ -91,12 +91,12 @@ func _on_app_code_import_pressed():
 		var card_amount: int = int(card_match.get_string(2))
 		total_cards += card_amount
 		for card in cards:
-			if cards[card]["App_Code"] == card_id:
-				cards_imported += card_amount
-				var card_data = cards[card]
-				card_data["Art"] = cards[card]["Arts"][0]
-				for i in range(card_amount):
-					emit_signal("Add_Card", card, card_data)
-				continue
+			for Art in cards[card]["Arts"]:
+				if Art[3] == card_id:
+					cards_imported += card_amount
+					var card_data = cards[card]
+					card_data["Art"] = Art
+					for i in range(card_amount):
+						emit_signal("Add_Card", card, card_data)
 	if cards_imported != total_cards:
-		emit_signal("Notification", "Error importing all cards", Color.RED)
+		emit_signal("Notification", "Failed to import all cards", Color.RED)

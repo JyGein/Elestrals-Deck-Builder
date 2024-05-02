@@ -20,9 +20,9 @@ visible = false
 
 [node name="Esc Button" type="TextureButton" parent="."]
 visible = false
-offset_left = 8.0
+offset_left = 7.0
 offset_top = 7.0
-offset_right = 48.0
+offset_right = 47.0
 offset_bottom = 47.0
 texture_normal = ExtResource("4_83wa3")
 texture_pressed = ExtResource("5_s1hju")
@@ -79,6 +79,7 @@ grow_vertical = 2
 
 [connection signal="catalog_cards_updated" from="Catalog" to="." method="_on_catalog_catalog_cards_updated"]
 [connection signal="loaded_card" from="Catalog" to="Title Bg" method="_on_catalog_loaded_card"]
+[connection signal="setting_changed" from="Deck Builder" to="." method="change_setting"]
 [connection signal="spawned_card" from="Deck Builder" to="." method="_on_deck_builder_spawned_card"]
 [connection signal="pressed" from="Esc Button" to="." method="_on_esc_button_pressed"]
 [connection signal="Add_Card" from="Esc Menu" to="." method="_on_esc_menu_add_card"]

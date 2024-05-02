@@ -1,7 +1,33 @@
-[gd_scene load_steps=3 format=3 uid="uid://chiemseb8tbqb"]
+[gd_scene load_steps=10 format=3 uid="uid://chiemseb8tbqb"]
 
 [ext_resource type="Script" path="res://deck builder assets/deck_builder.gd" id="1_2xdth"]
 [ext_resource type="Texture2D" uid="uid://bi2f1pftp7c26" path="res://deck builder assets/bg.svg" id="1_yo4mf"]
+[ext_resource type="PackedScene" uid="uid://daaoj4v2agatj" path="res://general assets/options_slider.tscn" id="3_jh2py"]
+[ext_resource type="Texture2D" uid="uid://c5ctbbukf0x6b" path="res://deck builder assets/deckbuilder options bg.svg" id="3_v3345"]
+[ext_resource type="Script" path="res://Deck Builder Options Panel.gd" id="4_gytyj"]
+[ext_resource type="Texture2D" uid="uid://cv6kjo6jp43bl" path="res://buttons/arrow down button.svg" id="5_7vs4x"]
+[ext_resource type="Texture2D" uid="uid://cojmh88iwtemt" path="res://buttons/arrow down button presed.svg" id="6_7s0st"]
+
+[sub_resource type="Animation" id="Animation_w7p6a"]
+resource_name = "Move Options Panel"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(54, -77.5), Vector2(54, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hitx6"]
+_data = {
+"Move Options Panel": SubResource("Animation_w7p6a")
+}
 
 [node name="Deck Builder" type="Node2D"]
 script = ExtResource("1_2xdth")
@@ -20,4 +46,40 @@ disabled = true
 [node name="Cards Parent" type="Node2D" parent="Manual Drag Button"]
 position = Vector2(-26, 0)
 
+[node name="Options Panel" type="TextureRect" parent="."]
+offset_left = 54.0
+offset_top = -76.249
+offset_right = 691.0
+offset_bottom = 23.751
+texture = ExtResource("3_v3345")
+script = ExtResource("4_gytyj")
+
+[node name="Cards Per Row Slider" parent="Options Panel" instance=ExtResource("3_jh2py")]
+position = Vector2(20, 8)
+maximum_value = 10
+minimum_value = 1
+
+[node name="Toggle Button" type="TextureButton" parent="Options Panel"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -86.0
+offset_top = -22.5
+offset_right = -46.0
+offset_bottom = 17.5
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("5_7vs4x")
+texture_pressed = ExtResource("6_7s0st")
+
+[node name="Options Panel Animator" type="AnimationPlayer" parent="Options Panel"]
+libraries = {
+"": SubResource("AnimationLibrary_hitx6")
+}
+
 [connection signal="gui_input" from="Manual Drag Button" to="." method="_on_manual_drag_button_gui_input"]
+[connection signal="value_changed" from="Options Panel/Cards Per Row Slider" to="." method="_on_cards_per_row_slider_value_changed"]
+[connection signal="pressed" from="Options Panel/Toggle Button" to="Options Panel" method="_on_options_panel_toggle_button_pressed"]

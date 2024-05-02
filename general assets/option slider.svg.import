@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcv7hihx62iu1"
-path="res://.godot/imported/Loading bar outline.svg-a9bc9e55540ff348d7f8e66a26065594.ctex"
+uid="uid://chheuw8m41nxd"
+path="res://.godot/imported/option slider.svg-00c643bf63970f82e868ae556ed5c44b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://deck builder assets/main menu assets/Loading bar outline.svg"
-dest_files=["res://.godot/imported/Loading bar outline.svg-a9bc9e55540ff348d7f8e66a26065594.ctex"]
+source_file="res://general assets/option slider.svg"
+dest_files=["res://.godot/imported/option slider.svg-00c643bf63970f82e868ae556ed5c44b.ctex"]
 
 [params]
 

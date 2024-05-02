@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://daaoj4v2agatj"]
+
+[ext_resource type="Texture2D" uid="uid://4j7lnadlo7p4" path="res://general assets/option slider line.svg" id="1_ub3jh"]
+[ext_resource type="Script" path="res://Options Slider.gd" id="2_d6jtj"]
+[ext_resource type="Texture2D" uid="uid://chheuw8m41nxd" path="res://general assets/option slider.svg" id="3_foq2n"]
+[ext_resource type="FontFile" uid="uid://c8n11flq2dsj7" path="res://fonts/Alegreya-SemiBold.ttf" id="4_gg1vm"]
+
+[node name="Options Slider" type="Sprite2D"]
+texture = ExtResource("1_ub3jh")
+centered = false
+script = ExtResource("2_d6jtj")
+
+[node name="Slider Button" type="Sprite2D" parent="."]
+texture = ExtResource("3_foq2n")
+centered = false
+
+[node name="Slider Button Control" type="TextureButton" parent="Slider Button"]
+offset_right = 10.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="."]
+offset_top = 40.0
+offset_right = 97.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0, 0.983334, 1, 1)
+theme_override_fonts/font = ExtResource("4_gg1vm")
+theme_override_font_sizes/font_size = 16
+text = "Cards Per Row"
+
+[node name="Value" type="Label" parent="."]
+offset_top = 59.0
+offset_right = 97.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0, 0.983334, 1, 1)
+theme_override_fonts/font = ExtResource("4_gg1vm")
+theme_override_font_sizes/font_size = 16
+text = "#
+"
+horizontal_alignment = 1
+
+[connection signal="gui_input" from="Slider Button/Slider Button Control" to="." method="_on_slider_button_control_gui_input"]

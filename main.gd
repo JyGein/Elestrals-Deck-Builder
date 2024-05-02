@@ -4,8 +4,14 @@ signal image_installed
 var card_file: FileAccess
 var notification_text: Resource
 var input_gui: Resource
+var settings: Dictionary
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if !FileAccess.file_exists("user://Settings.json"):
+		var temp_file = FileAccess.open("user://Settings.json", FileAccess.WRITE)
+		var temp_dict = {}
+		temp_file.store_string(JSON.stringify(temp_dict))
+	settings = JSON.parse_string(FileAccess.get_file_as_string("user://Settings.json"))
 	notification_text = preload("res://general assets/notification_text.tscn")
 	input_gui = preload("res://general assets/base_input.tscn")
 	var http_request = HTTPRequest.new()
@@ -50,7 +56,7 @@ func _ready():
 					card_file = FileAccess.open("user://Cards/{0} {1} {2}.{3}".format([Art[2], card_name, Art[0], image_type]), FileAccess.WRITE)
 					var error = http_request.request(Art[1])
 					if error != OK:
-						push_error("An error occurred in the HTTP request.")
+						push_error("An error occurred in the HTTP request. {0}".format([error]))
 					await image_installed
 					$"Title Bg".loaded_item()
 	$Catalog.visible = true
@@ -58,6 +64,8 @@ func _ready():
 	$"Esc Button".visible = true
 	$"Title Bg".set_loading_max(art_amount)
 	$"Title Bg".set_loading_text("Loading Cards")
+	print(settings)
+	$"Deck Builder".load_settings(settings)
 	await $Catalog.load_cards(cards)
 	$"Title Bg".fade_out()
 
@@ -151,3 +159,10 @@ func need_input(question: String, placeholder_text: String, self_node: Node):
 
 func _on_esc_menu_add_card(card_name, card_data):
 	$"Deck Builder".add_card(card_name, card_data)
+
+
+func change_setting(setting_name, value):
+	settings[setting_name] = value
+	DirAccess.open("user://").remove("Settings.json")
+	var settings_file = FileAccess.open("user://Settings.json", FileAccess.WRITE)
+	settings_file.store_string(JSON.stringify(settings))

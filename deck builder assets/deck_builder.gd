@@ -1,6 +1,8 @@
 extends Node2D
 
+signal setting_changed(option_name, value)
 signal spawned_card(card)
+
 var card_objects: Array[Node] = []
 var SPACING
 var CARD_WIDTH
@@ -10,13 +12,31 @@ var DECK_HEIGHT
 var count = 0
 var main_deck_amount: int = 0
 var spirit_deck_amount: int = 0
+var cards_per_row: int = 5:
+	get:
+		return cards_per_row
+	set(value):
+		cards_per_row = value
+		CARD_WIDTH = (DECK_WIDTH*0.8-4*SPACING)/cards_per_row
+		CARD_HEIGHT = (CARD_WIDTH*1125)/825
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	DECK_WIDTH = $Bg.texture.get_size().x
 	SPACING = DECK_WIDTH*0.01
-	CARD_WIDTH = (DECK_WIDTH*0.8-4*SPACING)/5
+	CARD_WIDTH = (DECK_WIDTH*0.8-4*SPACING)/cards_per_row
 	CARD_HEIGHT = (CARD_WIDTH*1125)/825
 	DECK_HEIGHT = 0
+
+
+func load_settings(settings: Dictionary):
+	if settings.has("Cards Per Row"):
+		$"Options Panel/Cards Per Row Slider".set_slider_pos(settings["Cards Per Row"])
+		$"Options Panel/Cards Per Row Slider".slider_value = settings["Cards Per Row"]
+	else:
+		$"Options Panel/Cards Per Row Slider".set_slider_pos(5)
+		$"Options Panel/Cards Per Row Slider".slider_value = 5
+
 
 func add_card(card_name, card_data):
 	if card_data["Type"] == "Spirit":
@@ -53,15 +73,18 @@ func add_card(card_name, card_data):
 	sort()
 	emit_signal("spawned_card", card)
 
+
 func sort():
 	count = 0
 	card_objects.sort_custom(func (a, b): return sort_cards(a, b))
 	for card in card_objects:
 		@warning_ignore("integer_division")
-		card.position = Vector2((DECK_WIDTH*0.1)+(count%5)*(CARD_WIDTH+SPACING), (DECK_WIDTH*0.1)+(count/5)*(CARD_HEIGHT+SPACING))
+		card.position = Vector2((DECK_WIDTH*0.1)+(count%cards_per_row)*(CARD_WIDTH+SPACING), (DECK_WIDTH*0.1)+(count/cards_per_row)*(CARD_HEIGHT+SPACING))
 		count += 1
+		var scale_factor = CARD_WIDTH/card.texture.get_size().x
+		card.scale = Vector2(scale_factor, scale_factor)
 	@warning_ignore("integer_division")
-	DECK_HEIGHT = ((count/5)*(CARD_HEIGHT+SPACING)-SPACING)
+	DECK_HEIGHT = ((count/cards_per_row)*(CARD_HEIGHT+SPACING)-SPACING)
 
 func sort_alphabetical(a: String, b: String):
 	var result: Array[String] = ["", ""]
@@ -105,6 +128,7 @@ func sort_cards(a, b):
 		return sort_alphabetical(a.card_data["Art"][0], b.card_data["Art"][0])
 	return false
 
+
 var last_drag_time: int = 0
 var last_Lclick_time: int = 0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -115,8 +139,16 @@ func _process(_delta):
 		if $"Manual Drag Button/Cards Parent".position.y < -DECK_HEIGHT:
 			$"Manual Drag Button/Cards Parent".position.y -= ($"Manual Drag Button/Cards Parent".position.y+DECK_HEIGHT-10)*(1.0/10.0)
 
+
 func _on_manual_drag_button_gui_input(event):
 	if event is InputEventMouseMotion:
 		if event.button_mask == 1:
 			$"Manual Drag Button/Cards Parent".position.y += event.relative.y
 			last_drag_time = Time.get_ticks_msec()
+
+
+func _on_cards_per_row_slider_value_changed(new_value):
+	cards_per_row = new_value
+	sort()
+	emit_signal("setting_changed", "Cards Per Row", new_value)
+
